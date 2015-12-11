@@ -2,11 +2,10 @@
 
 import sys
 from datetime import datetime
-from csv import DictReader
+from itertools import islice
 from math import sqrt
 from functions import logloss, get_x, get_p
 import pickle
-import numpy as np
 
 # parameters #################################################################
 
@@ -21,11 +20,10 @@ fresh = True # SET inmodel IF fresh == False
 
 if fresh:    
     lambda2 = .0002   # L2 regularization
-    D = 2 ** 18    # number of weights use for learning
-    m = np.zeros(D)
-    q = np.repeat(lambda2, D)
-    header = np.arr(['clk','z','d','hr','wd','zr','sa','as','con','camp','cln','camplist','algo'])
-    extra = np.arr(['camplist','algo'])
+    D = 2 ** 8    # number of weights use for learning
+    m = [0.] * D
+    q = [lambda2] * D
+    header = ['z','d','hr','wd','zr','sa','as','con','camp','cln']
 else:
     f = open(inmodel,'r')
     pars = pickle.load(f)
@@ -34,11 +32,10 @@ else:
     m = pars['m']
     q = pars['q']
     header = pars['header']
-    extra = pars['extra']
 
 # initialize new model
-w = np.copy(m)
-g = np.zeros(D)
+w = list(m)
+g = [0.] * D
 #q[D - 1] = 0. # No regularisation for bias 
 
 # D. Update given model
@@ -66,37 +63,35 @@ def update_w(w, g, x, p, y, m, q):
 
 # start training a logistic regression model using on pass sgd
 loss = 0.
-lossb = 0.
+lossbb = 0.
 errcount = 0
 #for t, row in enumerate(DictReader(train, header, delimiter='^')):
 while True:
-    lines = list(islice(train, 100))
+    lines = list(islice(train, 2))
+    
     if not lines:
         break
-    rows = np.genfromtxt(lines, dtype=str, delimiter='^')
+    
+    lenbatch = len(lines)
 
+    rows = map(lambda x: x.strip().split('^'), lines)
 
+    y = map(lambda x: 1. if x[0] == '1' else 0., rows)
+    reqs = map(lambda x: [a + '=' + b for (a, b) in zip(header, x[1:11])], rows)
 
-    y = 1. if row['clk'] == '1' else 0.
+    X = map(lambda x: get_x(x, D), reqs)
 
-    del row['clk']  # can't let the model peek the answer
+    errorbatch = sum(map(lambda x: 0 if x['sane'] else 1, X))
+    errcount += errorbatch
 
-    for h in (extra):
-        del row[h]
+    p = map(lambda x: get_p(x, w)[0], X)
 
-    # main training procedure
-    # step 1, get the hashed features
-    x = get_x(row, D)
-    if x == -1:
-        errcount += 1
-        continue
-    # step 2, get prediction
-    p, _ = get_p(x, w)
+    lossb = sum([logloss(p_, y_) for (p_, y_) in zip(p, y)])
+    loss += lossb
 
-    # for progress validation, useless for learning our model
-    lossx = logloss(p, y)
-    loss += lossx
-    lossb += lossx
+    w, g = update_w(w, g, X, p, y, m, q)
+# UPDATE FUNCTION NEEDS TO BE VECTORIZED
+'''
     if t % logbatch == 0 and t > 1:
         print('%s\tencountered: %d\tcurrent whole logloss: %f\tcurrent batch logloss: %f' % (datetime.now(), t, loss/t, lossb/logbatch))
         lossb = 0.
@@ -106,13 +101,12 @@ while True:
 
 print "Final logloss:",loss/t
 print "ERROR ROWS:",errcount
-
+'''
 ## UPDATE q
 
 pars = {}
 pars['D'] = D
 pars['header'] = header
-pars['extra'] = extra
 pars['m'] = w
 pars['q'] = q
 

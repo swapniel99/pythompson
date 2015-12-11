@@ -22,17 +22,20 @@ def logloss(p, y):
 #     D: the max index that we can hash to
 # OUTPUT:
 #     x: a list of indices that its value is 1
-def get_x(csv_row, D):
+def get_x(row, D):
     x = {}
+    x['sane'] = True
+
+    try:
+        indices = map(lambda _x: hash(_x) % (D - 1), row)
+    except:
+        x['sane'] = False
+        return x
+
     x[D - 1] = 1  # D - 1 is the index of the bias term
-    for key, s in csv_row.items():
-        try:
-            index = hash(key + '=' + s) % (D - 1) # weakest hash ever ?? Not anymore :P
-        except:
-#            print 'ERROR IN :(',key, "=", value,') AT',csv_row
-            return -1
-        if(not x.has_key(index)):
-            x[index] = 0
+    for i in indices:
+        if(not x.has_key(i)):
+            x[i] = 0
 #        if signed:
 #        try:
 #            x[index] += (1 if (hash(s + '@')%2)==1 else -1) # Disable for speed
@@ -40,7 +43,7 @@ def get_x(csv_row, D):
 #                print 'ERROR IN :(',key, "=", value,') AT',csv_row
 #            return -1
 #        else:
-        x[index] += 1
+        x[i] += 1
     return x  # x contains indices of features that have a value as number of occurences
 
 
@@ -51,23 +54,14 @@ def get_x(csv_row, D):
 # OUTPUT:
 #     probability of p(y = 1 | x; w)
 def get_p(x, w):
+    if not x['sane']:
+        return [.5, 0.]
+    del x['sane']
+
     wTx = 0.
     for i, xi in x.items():
         wTx += w[i] * xi  # w[i] * x[i]
-    return 1./(1. + exp(-max(min(wTx, 50.), -50.))), wTx  # bounded sigmoid
 
-# C. Get probability estimation on x
-# INPUT:
-#     x: features
-#     w: weights
-# OUTPUT:
-#     probability of p(y = 1 | x; w)
-def get_ps(xs, w):
-    res=[]
-    for x in xs:
-        wTx = 0.
-        for i, xi in x.items():
-            wTx += w[i] * xi  # w[i] * x[i]
-        res.append([1./(1. + exp(-max(min(wTx, 50.), -50.))), wTx])  # bounded sigmoid
-    return res
+    x['sane'] = True
+    return [1./(1. + exp(-max(min(wTx, 50.), -50.))), wTx]  # bounded sigmoid
 
