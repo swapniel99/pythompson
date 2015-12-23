@@ -3,15 +3,15 @@
 import sys
 from datetime import datetime
 from itertools import islice
-from functions import logloss, get_x, get_p
+from functions import logloss, get_x, get_p, getclick
 
 test = sys.stdin
 modelfile = sys.argv[1]
-outfile = open(sys.argv[2], 'w')
+#outfile = open(sys.argv[2], 'w')
 
-batchsize = 100000
+batchsize = 1000000
 
-comment = sys.argv[3]
+comment = sys.argv[2]
 
 import pickle
 f = open(modelfile,'r')
@@ -21,6 +21,8 @@ f.close()
 D = pars['D']
 w = pars['m']
 header = pars['header']
+extra = ['camp','cln'] # pars['extra']
+Wreal = pars['Wreal']
 
 # testing (build preds file)
 loss = 0.
@@ -36,17 +38,16 @@ while True:
 
     rows = map(lambda x: x.strip().split('^'), lines)
 
-    y = map(lambda x: 1. if x[0] == '1' else 0., rows)
-    reqs = map(lambda x: [a + '=' + b for (a, b) in zip(header, x[1:11])], rows)
+    X = map(lambda x: get_x([a + '=' + b for (a, b) in zip(header + extra, x[1:11])], D), rows)
 
-    X = map(lambda x: get_x(x, D), reqs)
+    y = map(lambda x: getclick(x, Wreal), X)
 
     errorbatch = sum(map(lambda x: 1 if x.has_key('insane') else 0, X))
     errcount += errorbatch
 
-    pr = map(lambda x: get_p(x, w), X)
-    p = map(lambda x: x[0], pr)
-    r = map(lambda x: x[1], pr)
+    p = map(lambda x: get_p(x, w)[0], X)
+#    p = map(lambda x: x[0], pr)
+#    r = map(lambda x: x[1], pr)
 
     lossb = sum([logloss(p_, y_) for (p_, y_) in zip(p, y)])
     loss += lossb
@@ -54,15 +55,14 @@ while True:
     t += lenbatch
     print str(datetime.now()) + " Encountered:",t,"Current loss:",lossb/lenbatch,"Total loss:",loss/t
 
-    for i in range(lenbatch):
-        outfile.write('%d %f\n' % (int(y[i]), r[i]))
+#    for i in range(lenbatch):
+#        outfile.write('%d %f\n' % (int(y[i]), r[i]))
 
-outfile.close()
+#outfile.close()
 
 print 'Error count:',errcount
 print ('FINAL AVG LOSS = %f' % (loss/t))
 
-with open('testscores','a') as f:
-    f.write("alpha "+ comment+ ": " + str(loss/t) + "\n")
-
+with open('initscores','a') as f:
+    f.write("lambda "+ comment+ ": " + str(loss/t) + "\n")
 

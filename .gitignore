@@ -4,6 +4,11 @@ output/
 allfiles.txt
 sample
 *.sh
+*.svg
+*scores
+wreal*
+vals
+campclient.dict
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
