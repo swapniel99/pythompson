@@ -10,14 +10,16 @@ import pickle
 # parameters #################################################################
 
 train = sys.stdin
-outmodel = sys.argv[1]
-inmodel = ''
+inmodel = sys.argv[1]
+outmodel = sys.argv[2]
 
-alpha = .1  #0.09 # Initial learning rate.
+fresh = False # SET inmodel IF fresh == False
 
-fresh = True # SET inmodel IF fresh == False
-
+alpha = .03  #0.09 # Initial learning rate.
+passes = 2
 adapt = 1
+
+tsalpha = .5
 
 batchsize = 1000000
 logbatch = batchsize/10
@@ -28,8 +30,8 @@ cacl = pickle.load(f)
 f.close()
 
 if fresh:    
-    lambda2 = .0002   # L2 regularization
-    D = 2 ** 18    # number of weights use for learning
+    lambda2 = .0001   # L2 regularization
+    D = 2 ** 24    # number of weights use for learning
     m = [0.] * D
     q = [lambda2] * D
     header = ['z','d','hr','wd','zr','sa','as','con']
@@ -45,7 +47,7 @@ else:
     m = pars['m']
     q = pars['q']
     header = pars['header']
-    extra = ['extra']
+    extra = pars['extra']
     Wreal = pars['Wreal']
 
 # D. Update given model
@@ -81,24 +83,25 @@ def update_w(w, g, x, p, y, m, q):
 # OUTPUT:
 #     w: updated model
 #     n: updated count
-def update_m(X, y, m, q, D):
+def update_m(X, y, m, q, D, trpasses = 1):
     w = list(m)
     g = [0.] * D
     t1 = 0
     loss1 = 0.
     lossb1 = 0.
-    for j in range(len(X)):
-        if X[j].has_key('insane'):
-            continue
-        p = get_p(X[j], w)[0]
-        lossx1 = logloss(p, y[j])
-        loss1 += lossx1
-        lossb1 += lossx1
-        t1 += 1
-        if t1 % logbatch == 0 and t1 > 1:
-            print('%s\tTraining encountered: %d\tcurrent whole logloss: %f\tcurrent batch logloss: %f' % (datetime.now(), t1, loss1/t1, lossb1/logbatch))
-            lossb1 = 0.
-        w, g = update_w(w, g, X[j], p, y[j], m, q)
+    for i in range(trpasses)
+        for j in range(len(X)):
+            if X[j].has_key('insane'):
+                continue
+            p = get_p(X[j], w)[0]
+            lossx1 = logloss(p, y[j])
+            loss1 += lossx1
+            lossb1 += lossx1
+            t1 += 1
+            if t1 % logbatch == 0 and t1 > 1:
+                print('%s\tPass: %d\tTraining encountered: %d\tcurrent whole logloss: %f\tcurrent batch logloss: %f' % (datetime.now(), i, t1, loss1/t1, lossb1/logbatch))
+                lossb1 = 0.
+            w, g = update_w(w, g, X[j], p, y[j], m, q)
     del g
     return w
 
@@ -136,7 +139,7 @@ while True:
     qualcamps = map(lambda x: map(lambda x_: [extra[0] + '=' + x_, extra[1] + '=' + (cacl[x_] if cacl.has_key(x_) else '')], x[11].strip('~,').split(',')), rows)
     del rows
 
-    sd = map(lambda x: 1 / x, q)
+    sd = map(lambda x: tsalpha / sqrt(x), q)
 
     Xp = [ts_selectcamp(req, qc, m, sd, D) for (req, qc) in zip(reqs, qualcamps)]
     del sd, reqs, qualcamps
@@ -152,7 +155,7 @@ while True:
     t += lenbatch
     print('%s\tTesting Encountered: %d\tTotal logloss: %f\tCurrent logloss: %f' % (datetime.now(), t, loss/t, lossb/lenbatch))
 
-    w = update_m(X, y, m, q, D)
+    w = update_m(X, y, m, q, D, passes)
     del m, y
     m = w
     q = update_q(X, w, q)
