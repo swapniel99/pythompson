@@ -7,8 +7,9 @@ sample
 *.svg
 *scores
 wreal*
+*.dict
 vals
-campclient.dict
+*.swp
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -15,7 +15,7 @@ outmodel = sys.argv[2]
 
 fresh = False # SET inmodel IF fresh == False
 
-alpha = .03  #0.09 # Initial learning rate.
+alpha = .03  # Initial learning rate. Need to explore for live.. 
 passes = 2
 adapt = 1
 
@@ -25,7 +25,7 @@ batchsize = 1000000
 logbatch = batchsize/10
 
 # Get campaignid to clientid mappings
-f = open('campclient.dict','r')
+f = open('campaigndetails.dict','r')
 cacl = pickle.load(f)
 f.close()
 
@@ -89,7 +89,7 @@ def update_m(X, y, m, q, D, trpasses = 1):
     t1 = 0
     loss1 = 0.
     lossb1 = 0.
-    for i in range(trpasses)
+    for i in range(trpasses):
         for j in range(len(X)):
             if X[j].has_key('insane'):
                 continue
@@ -136,7 +136,7 @@ while True:
     del lines
 
     reqs = map(lambda x: [a + '=' + b for (a, b) in zip(header, x[1:9])], rows)
-    qualcamps = map(lambda x: map(lambda x_: [extra[0] + '=' + x_, extra[1] + '=' + (cacl[x_] if cacl.has_key(x_) else '')], x[11].strip('~,').split(',')), rows)
+    qualcamps = map(lambda x: map(lambda x_: [extra[0] + '=' + x_, extra[1] + '=' + (cacl[x_][1] if cacl.has_key(x_) else '')], x[11].strip('~,').split(',')), rows)
     del rows
 
     sd = map(lambda x: tsalpha / sqrt(x), q)

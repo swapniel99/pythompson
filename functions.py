@@ -125,6 +125,35 @@ def ts_selectcamp(req, qc, m, sd, D):
     cp = [[c, p] for (c, p) in zip(cases, preds) if not c.has_key('insane')]
     return max(cp, key = lambda x: x[1])
 
+def calcecpm(camp, ctr, camptype, cost):
+    cvr = .02
+    if camptype == 1:
+        return cost
+    elif camptype == 2:
+        return cost * ctr
+    elif camptype == 3:
+        return cost * ctr * cvr
+    else:
+        return 0.
+
+def softmax_selectcamp_ecpm(req, qc, m, sd, D, campdet):
+    tau = .2
+    x = get_x(req, D)
+    cases = map(lambda c: add2x(x, c, D), qc)
+    preds = map(lambda c: get_p(c, m)[0], cases)
+    weights = map(lambda (c, p): exp(calcecpm(c[0][5:], p, campdet) / tau), zip(qc, preds)) # Getting campaignid by [5:]
+    cp = [[c, w] for (c, w) in zip(cases, weights) if not c.has_key('insane')]
+    return max(cp, key = lambda x: x[1])
+
+
+def ts_selectcamp_ecpm(req, qc, m, sd, D, campdet):
+    x = get_x(req, D)
+    cases = map(lambda c: add2x(x, c, D), qc)
+    preds = map(lambda c: get_p_ts(c, m, sd)[0], cases)
+    ecpms = map(lambda (c, p): calcecpm(c[0][5:], p, campdet), zip(qc, preds)) # Getting campaignid by [5:]
+    cp = [[c, p] for (c, p) in zip(cases, ecpms) if not c.has_key('insane')]
+    return max(cp, key = lambda x: x[1])
+
 def getclick(x, Wreal):
     if x.has_key('insane'):
         print "WHAT WHAT WHAT?!!!"
