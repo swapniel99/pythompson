@@ -4,7 +4,7 @@ import sys
 from datetime import datetime
 from itertools import islice
 from math import sqrt
-from functions import logloss, get_p, ts_selectcamp, getclick
+from functions import logloss, get_p, ts_selectcamp, getclick, ts_selectcamp_ecpm, softmax_selectcamp_ecpm
 import pickle
 
 # parameters #################################################################
@@ -15,18 +15,18 @@ outmodel = sys.argv[2]
 
 fresh = False # SET inmodel IF fresh == False
 
-alpha = .03  # Initial learning rate. Need to explore for live.. 
+alpha = .1 # .03  # Initial learning rate. Need to explore for live.. 
 passes = 2
 adapt = 1
 
-tsalpha = .5
+tsalpha = .25 # .5
 
 batchsize = 1000000
 logbatch = batchsize/10
 
 # Get campaignid to clientid mappings
 f = open('campaigndetails.dict','r')
-cacl = pickle.load(f)
+campdet = pickle.load(f)
 f.close()
 
 if fresh:    
@@ -99,7 +99,7 @@ def update_m(X, y, m, q, D, trpasses = 1):
             lossb1 += lossx1
             t1 += 1
             if t1 % logbatch == 0 and t1 > 1:
-                print('%s\tPass: %d\tTraining encountered: %d\tcurrent whole logloss: %f\tcurrent batch logloss: %f' % (datetime.now(), i, t1, loss1/t1, lossb1/logbatch))
+#                print('%s\tPass: %d\tTraining encountered: %d\tcurrent whole logloss: %f\tcurrent batch logloss: %f' % (datetime.now(), i, t1, loss1/t1, lossb1/logbatch))
                 lossb1 = 0.
             w, g = update_w(w, g, X[j], p, y[j], m, q)
     del g
@@ -136,12 +136,15 @@ while True:
     del lines
 
     reqs = map(lambda x: [a + '=' + b for (a, b) in zip(header, x[1:9])], rows)
-    qualcamps = map(lambda x: map(lambda x_: [extra[0] + '=' + x_, extra[1] + '=' + (cacl[x_][1] if cacl.has_key(x_) else '')], x[11].strip('~,').split(',')), rows)
+    qualcamps = map(lambda x: filter(lambda x_: x_ != '', x[11].strip('~,').split(',')), rows)
+    qualcamplvls = map(lambda x: map(lambda x_: [extra[0] + '=' + x_, extra[1] + '=' + (campdet[x_][1] if campdet.has_key(x_) else '')], x), qualcamps)
     del rows
 
     sd = map(lambda x: tsalpha / sqrt(x), q)
 
-    Xp = [ts_selectcamp(req, qc, m, sd, D) for (req, qc) in zip(reqs, qualcamps)]
+#    Xp = [ts_selectcamp(req, qcl, m, sd, D) for (req, qcl) in zip(reqs, qualcamplvls) if not len(qcl) == 0]
+    Xp = [ts_selectcamp_ecpm(req, qc, qcl, m, sd, D, campdet) for (req, qc, qcl) in zip(reqs, qualcamps, qualcamplvls) if not len(qc) == 0]
+#    Xp = [softmax_selectcamp_ecpm(req, qc, qcl, m, D, campdet) for (req, qc, qcl) in zip(reqs, qualcamps, qualcamplvls) if not len(qc) == 0]
     del sd, reqs, qualcamps
 
     X = map(lambda x: x[0], Xp)

@@ -118,41 +118,46 @@ def get_p_linucb(x, m, q, alpha):
     score = mTx + alpha * sqrt(qx)
     return [1./(1. + exp(-max(min(score, 100.), -100.))), score]  # bounded sigmoid
 
-def ts_selectcamp(req, qc, m, sd, D):
+def ts_selectcamp(req, qcl, m, sd, D): # Selects based on max CTR
     x = get_x(req, D)
-    cases = map(lambda c: add2x(x, c, D), qc)
+    cases = map(lambda c: add2x(x, c, D), qcl)
     preds = map(lambda c: get_p_ts(c, m, sd)[0], cases)
     cp = [[c, p] for (c, p) in zip(cases, preds) if not c.has_key('insane')]
     return max(cp, key = lambda x: x[1])
 
-def calcecpm(camp, ctr, camptype, cost):
-    cvr = .02
+def calcecpm(ctr, campattr):
+    cvr = .02 # Assumption
+    camptype = campattr[2]
     if camptype == 1:
-        return cost
+        return campattr[3]
     elif camptype == 2:
-        return cost * ctr
+        return campattr[4] * ctr
     elif camptype == 3:
-        return cost * ctr * cvr
+        return campattr[5] * ctr * cvr
     else:
         return 0.
 
-def softmax_selectcamp_ecpm(req, qc, m, sd, D, campdet):
+def softmax_selectcamp_ecpm(req, qc, qcl, m, D, campdet):
     tau = .2
     x = get_x(req, D)
-    cases = map(lambda c: add2x(x, c, D), qc)
+    cases = map(lambda c: add2x(x, c, D), qcl)
     preds = map(lambda c: get_p(c, m)[0], cases)
-    weights = map(lambda (c, p): exp(calcecpm(c[0][5:], p, campdet) / tau), zip(qc, preds)) # Getting campaignid by [5:]
-    cp = [[c, w] for (c, w) in zip(cases, weights) if not c.has_key('insane')]
-    return max(cp, key = lambda x: x[1])
+    weights = map(lambda (c, p): exp(calcecpm(p, campdet[c]) / tau), zip(qc, preds)) # Getting campaignid by [5:]
+    cp = [[c, p, w] for (c, p, w) in zip(cases, preds, weights) if not c.has_key('insane')]
+    return max(cp, key = lambda x: x[2])[0:2]
 
 
-def ts_selectcamp_ecpm(req, qc, m, sd, D, campdet):
+def ts_selectcamp_ecpm(req, qc, qcl, m, sd, D, campdet):
     x = get_x(req, D)
-    cases = map(lambda c: add2x(x, c, D), qc)
+    cases = map(lambda c: add2x(x, c, D), qcl)
     preds = map(lambda c: get_p_ts(c, m, sd)[0], cases)
-    ecpms = map(lambda (c, p): calcecpm(c[0][5:], p, campdet), zip(qc, preds)) # Getting campaignid by [5:]
-    cp = [[c, p] for (c, p) in zip(cases, ecpms) if not c.has_key('insane')]
-    return max(cp, key = lambda x: x[1])
+    try:
+        ecpms = map(lambda (c, p): calcecpm(p, campdet[c]), zip(qc, preds)) # Getting campaignid by [5:]
+    except:
+        print req, qc, qcl
+        exit()
+    cp = [[c, p, e] for (c, p, e) in zip(cases, preds, ecpms) if not c.has_key('insane')]
+    return max(cp, key = lambda x: x[2])[0:2]
 
 def getclick(x, Wreal):
     if x.has_key('insane'):
