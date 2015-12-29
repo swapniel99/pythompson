@@ -21,7 +21,7 @@ adapt = 1
 
 tsalpha = .25 # .5
 
-batchsize = 2000000
+batchsize = 1000000
 logbatch = batchsize/10
 
 # Get campaignid to clientid mappings
@@ -94,13 +94,13 @@ def update_m(X, y, m, q, D, trpasses = 1):
             if X[j].has_key('insane'):
                 continue
             p = get_p(X[j], w)[0]
-#            lossx1 = logloss(p, y[j])
-#            loss1 += lossx1
-#            lossb1 += lossx1
-#            t1 += 1
-#            if t1 % logbatch == 0 and t1 > 1:
+            lossx1 = logloss(p, y[j])
+            loss1 += lossx1
+            lossb1 += lossx1
+            t1 += 1
+            if t1 % logbatch == 0 and t1 > 1:
 #                print('%s\tPass: %d\tTraining encountered: %d\tcurrent whole logloss: %f\tcurrent batch logloss: %f' % (datetime.now(), i, t1, loss1/t1, lossb1/logbatch))
-#                lossb1 = 0.
+                lossb1 = 0.
             w, g = update_w(w, g, X[j], p, y[j], m, q)
     del g
     return w
@@ -144,11 +144,11 @@ while True:
     del rows
 
     sd = 0
-    sd = map(lambda x: tsalpha / sqrt(x), q)
+#    sd = map(lambda x: tsalpha / sqrt(x), q)
 
 #    Xp = [ts_selectcamp(req, qc, qcl, m, sd, D, campdet) for (req, qc, qcl) in zip(reqs, qualcamps, qualcamplvls) if not len(qcl) == 0]
-    Xp = [ts_selectcamp_ecpm(req, qc, qcl, m, sd, D, campdet) for (req, qc, qcl) in zip(reqs, qualcamps, qualcamplvls) if not len(qc) == 0]
-#    Xp = [softmax_selectcamp_ecpm(req, qc, qcl, m, D, campdet) for (req, qc, qcl) in zip(reqs, qualcamps, qualcamplvls) if not len(qc) == 0]
+#    Xp = [ts_selectcamp_ecpm(req, qc, qcl, m, sd, D, campdet) for (req, qc, qcl) in zip(reqs, qualcamps, qualcamplvls) if not len(qc) == 0]
+    Xp = [softmax_selectcamp_ecpm(req, qc, qcl, m, D, campdet) for (req, qc, qcl) in zip(reqs, qualcamps, qualcamplvls) if not len(qc) == 0]
     del sd, reqs, qualcamps
 
     X = map(lambda x: x[0], Xp)
@@ -170,7 +170,7 @@ while True:
     w = update_m(X, y, m, q, D, passes)
     del m, y
     m = w
-    q = update_q(X, w, q)
+#    q = update_q(X, w, q)
     del X
 
 print "Final logloss:",loss/t
