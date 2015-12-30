@@ -6,6 +6,7 @@ from itertools import islice
 from math import sqrt
 from functions import logloss, get_p, ts_selectcamp, getclick, ts_selectcamp_ecpm, softmax_selectcamp_ecpm, getrev
 import pickle
+import gc
 
 # parameters #################################################################
 
@@ -19,9 +20,9 @@ alpha = .1 # .03  # Initial learning rate. Need to explore for live.. # .1
 passes = 2
 adapt = 1
 
-tsalpha = .25 # .5
+tsalpha = .5
 
-batchsize = 2000000
+batchsize = 1000000
 logbatch = batchsize/10
 
 # Get campaignid to clientid mappings
@@ -159,6 +160,9 @@ while True:
 
     lossb = sum([logloss(xp_[1], y_) for (xp_, y_) in zip(Xp, y)])
     del Xp
+    
+#    p = map(lambda x: get_p(x, m), X)
+#    lossb = sum([logloss(p_, y_) for (p_, y_) in zip(p, y)])
 
     loss += lossb
     erev += erevb
@@ -172,6 +176,7 @@ while True:
     m = w
     q = update_q(X, w, q)
     del X
+    gc.collect()
 
 print "Final logloss:",loss/t
 

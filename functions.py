@@ -2,7 +2,7 @@
 
 from math import exp, log, sqrt
 from pymmh3 import hash
-from numpy.random import normal, binomial
+from numpy.random import normal, binomial, choice
 
 #signed = False    # Use signed hash? Set to False for to reduce number of hash calls
 
@@ -135,7 +135,12 @@ def getrev(campattr, y):
 def ts_selectcamp(req, qc, qcl, m, sd, D, campdet): # Selects based on max CTR
     x = get_x(req, D)
     cases = map(lambda c: add2x(x, c, D), qcl)
-    preds = map(lambda c: get_p_ts(c, m, sd)[0], cases)
+    indices = [index for case in cases for index in case]
+    w = {}
+    for i in indices:
+        if not w.has_key(i):
+            w[i] = normal(m[i], sd[i])
+    preds = map(lambda c: get_p(c, w)[0], cases)
     attrs = map(lambda c: campdet[c], qc)
     ecpms = map(lambda (a, p): calcecpm(p, a), zip(attrs, preds))
     cp = [[c, p, a, e] for (c, p, a, e) in zip(cases, preds, attrs, ecpms) if not c.has_key('insane')]
@@ -162,13 +167,20 @@ def softmax_selectcamp_ecpm(req, qc, qcl, m, D, campdet):
     ecpms = map(lambda (a, p): calcecpm(p, a), zip(attrs, preds))
     weights = map(lambda e: exp(-max(min(e / tau, 700.), -700.)), ecpms)
     cp = [[c, p, a, e, w] for (c, p, a, e, w) in zip(cases, preds, attrs, ecpms, weights) if not c.has_key('insane')]
-    return max(cp, key = lambda x: x[4])[0:4]
-
+    sumwts = sum([c[4] for c in cp])
+    probs = map(lambda x: x[4] / sumwts, cp)
+    selind = choice(len(probs), p = probs)
+    return cp[selind][0:4]
 
 def ts_selectcamp_ecpm(req, qc, qcl, m, sd, D, campdet):
     x = get_x(req, D)
     cases = map(lambda c: add2x(x, c, D), qcl)
-    preds = map(lambda c: get_p_ts(c, m, sd)[0], cases)
+    indices = [index for case in cases for index in case]
+    w = {}
+    for i in indices:
+        if not w.has_key(i):
+            w[i] = normal(m[i], sd[i])
+    preds = map(lambda c: get_p(c, w)[0], cases)
     attrs = map(lambda c: campdet[c], qc)
     ecpms = map(lambda (a, p): calcecpm(p, a), zip(attrs, preds))
     cp = [[c, p, a, e] for (c, p, a, e) in zip(cases, preds, attrs, ecpms) if not c.has_key('insane')]

@@ -6,6 +6,7 @@ from itertools import islice
 from math import sqrt
 from functions import logloss, get_p, ts_selectcamp, getclick, ts_selectcamp_ecpm, softmax_selectcamp_ecpm, getrev
 import pickle
+import gc
 
 # parameters #################################################################
 
@@ -19,7 +20,7 @@ alpha = .1 # .03  # Initial learning rate. Need to explore for live.. # .1
 passes = 2
 adapt = 1
 
-tsalpha = .25 # .5
+#tsalpha = .5
 
 batchsize = 1000000
 logbatch = batchsize/10
@@ -66,7 +67,7 @@ def update_w(w, g, x, p, y, m, q):
         # alpha / (sqrt(g) + 1) is the adaptive learning rate heuristic
         # (p - y) * x[i] is the current gradient
         # note that in our case, if i in x then x[i] = 1
-        delta = (p - y) * xi + (w[i] - m[i]) * q[i]
+        delta = (p - y) * xi + (w[i] - m[i]) * .0001 # q[i]
         if adapt > 0:
             g[i] += delta ** 2
         w[i] -= delta * alpha / (sqrt(g[i]) ** adapt)  # Minimising log loss
@@ -94,13 +95,13 @@ def update_m(X, y, m, q, D, trpasses = 1):
             if X[j].has_key('insane'):
                 continue
             p = get_p(X[j], w)[0]
-            lossx1 = logloss(p, y[j])
-            loss1 += lossx1
-            lossb1 += lossx1
-            t1 += 1
-            if t1 % logbatch == 0 and t1 > 1:
+#            lossx1 = logloss(p, y[j])
+#            loss1 += lossx1
+#            lossb1 += lossx1
+#            t1 += 1
+#            if t1 % logbatch == 0 and t1 > 1:
 #                print('%s\tPass: %d\tTraining encountered: %d\tcurrent whole logloss: %f\tcurrent batch logloss: %f' % (datetime.now(), i, t1, loss1/t1, lossb1/logbatch))
-                lossb1 = 0.
+#                lossb1 = 0.
             w, g = update_w(w, g, X[j], p, y[j], m, q)
     del g
     return w
@@ -172,6 +173,7 @@ while True:
     m = w
 #    q = update_q(X, w, q)
     del X
+    gc.collect()
 
 print "Final logloss:",loss/t
 
