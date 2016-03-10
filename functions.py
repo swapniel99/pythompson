@@ -159,7 +159,7 @@ def calcecpm(ctr, campattr):
         return 0.
 
 def softmax_selectcamp_ecpm(req, qc, qcl, m, D, campdet):
-    tau = .2
+    tau = .2 # .2 is used in production. we also tried .5 here.
     x = get_x(req, D)
     cases = map(lambda c: add2x(x, c, D), qcl)
     preds = map(lambda c: get_p(c, m)[0], cases)
@@ -192,4 +192,23 @@ def getclick(x, Wreal):
         return 0
     preal = get_p(x, Wreal)[0]
     return binomial(1, preal)
+
+def readvw(line):
+    return filter(lambda x: x[0]!='|', map(lambda x: x.strip(),line.split()))
+
+def compress(array, length):
+    dct = {}
+    for i in range(length):
+        if(array[i] != 0.):
+            dct[i] = array[i]
+    return dct
+
+def decompress(dct, length):
+    array = [0.] * length
+    for i in dct:
+        try:
+            array[int(i)] = dct[i]
+        except:
+            print 'Couldn\'t convert a key to integer:', i
+    return array
 
