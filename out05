@@ -1,0 +1,823 @@
+nohup: ignoring input
+Lastfile:
+data/full/date=2016-07-05/hr=23/ef0c2752-046c-49df-9f86-1e1e4d32d346-000036
+data/samp/date=2016-07-05/samp.txt
+!!!!!
+2016-07-07 04:20:12.040262	encountered:                    1	current whole logloss: 0.005013	current batch logloss: 0.005013
+2016-07-07 04:20:12.040773	encountered:                    2	current whole logloss: 0.003634	current batch logloss: 0.002255
+2016-07-07 04:20:12.042913	encountered:                    4	current whole logloss: 0.002440	current batch logloss: 0.001246
+2016-07-07 04:20:12.044141	encountered:                    8	current whole logloss: 0.001657	current batch logloss: 0.000873
+2016-07-07 04:20:12.046524	encountered:                   16	current whole logloss: 0.491185	current batch logloss: 0.980712
+2016-07-07 04:20:12.061503	encountered:                   32	current whole logloss: 0.472421	current batch logloss: 0.453658
+2016-07-07 04:20:12.074995	encountered:                   64	current whole logloss: 0.534956	current batch logloss: 0.597491
+2016-07-07 04:20:12.107705	encountered:                  128	current whole logloss: 0.414017	current batch logloss: 0.293077
+2016-07-07 04:20:12.158901	encountered:                  256	current whole logloss: 0.248619	current batch logloss: 0.083222
+2016-07-07 04:20:12.221635	encountered:                  512	current whole logloss: 0.149353	current batch logloss: 0.050086
+2016-07-07 04:20:12.284832	encountered:                 1024	current whole logloss: 0.098240	current batch logloss: 0.047127
+2016-07-07 04:20:12.375842	encountered:                 2048	current whole logloss: 0.075702	current batch logloss: 0.053165
+2016-07-07 04:20:12.447088	encountered:                 4096	current whole logloss: 0.050850	current batch logloss: 0.025997
+2016-07-07 04:20:12.507181	encountered:                 8192	current whole logloss: 0.042075	current batch logloss: 0.033299
+2016-07-07 04:20:12.620201	encountered:                16384	current whole logloss: 0.033702	current batch logloss: 0.025329
+2016-07-07 04:20:12.849837	encountered:                32768	current whole logloss: 0.039727	current batch logloss: 0.045752
+2016-07-07 04:20:13.274327	encountered:                65536	current whole logloss: 0.040589	current batch logloss: 0.041451
+2016-07-07 04:20:14.115524	encountered:               131072	current whole logloss: 0.038680	current batch logloss: 0.036771
+2016-07-07 04:20:15.790551	encountered:               262144	current whole logloss: 0.039794	current batch logloss: 0.040909
+2016-07-07 04:20:19.094036	encountered:               524288	current whole logloss: 0.039141	current batch logloss: 0.038488
+2016-07-07 04:20:25.088310	encountered:              1000000	current whole logloss: 0.038262	current batch logloss: 0.037292
+2016-07-07 04:20:25.696495	encountered:              1048576	current whole logloss: 0.038194	current batch logloss: 0.036788
+2016-07-07 04:20:37.709948	encountered:              2000000	current whole logloss: 0.037824	current batch logloss: 0.037416
+2016-07-07 04:20:38.925440	encountered:              2097152	current whole logloss: 0.037813	current batch logloss: 0.037592
+2016-07-07 04:20:50.349846	encountered:              3000000	current whole logloss: 0.037478	current batch logloss: 0.036700
+2016-07-07 04:21:02.926135	encountered:              4000000	current whole logloss: 0.037186	current batch logloss: 0.036309
+2016-07-07 04:21:05.339934	encountered:              4194304	current whole logloss: 0.037192	current batch logloss: 0.037314
+2016-07-07 04:21:15.329009	encountered:              5000000	current whole logloss: 0.037055	current batch logloss: 0.036344
+2016-07-07 04:21:27.823526	encountered:              6000000	current whole logloss: 0.036935	current batch logloss: 0.036334
+2016-07-07 04:21:40.597422	encountered:              7000000	current whole logloss: 0.036574	current batch logloss: 0.034411
+2016-07-07 04:21:53.167631	encountered:              8000000	current whole logloss: 0.036357	current batch logloss: 0.034836
+2016-07-07 04:21:58.033181	encountered:              8388608	current whole logloss: 0.036263	current batch logloss: 0.034330
+2016-07-07 04:22:05.773193	encountered:              9000000	current whole logloss: 0.036164	current batch logloss: 0.034808
+2016-07-07 04:22:18.398941	encountered:             10000000	current whole logloss: 0.036036	current batch logloss: 0.034879
+2016-07-07 04:22:31.519121	encountered:             11000000	current whole logloss: 0.036053	current batch logloss: 0.036222
+2016-07-07 04:22:44.626850	encountered:             12000000	current whole logloss: 0.036087	current batch logloss: 0.036460
+2016-07-07 04:22:57.668592	encountered:             13000000	current whole logloss: 0.036135	current batch logloss: 0.036716
+2016-07-07 04:23:10.761946	encountered:             14000000	current whole logloss: 0.036185	current batch logloss: 0.036834
+2016-07-07 04:23:23.598611	encountered:             15000000	current whole logloss: 0.036185	current batch logloss: 0.036193
+2016-07-07 04:23:36.395151	encountered:             16000000	current whole logloss: 0.036171	current batch logloss: 0.035960
+2016-07-07 04:23:46.192130	encountered:             16777216	current whole logloss: 0.036169	current batch logloss: 0.036110
+2016-07-07 04:23:48.991208	encountered:             17000000	current whole logloss: 0.036156	current batch logloss: 0.035225
+2016-07-07 04:24:01.596718	encountered:             18000000	current whole logloss: 0.036185	current batch logloss: 0.036670
+2016-07-07 04:24:14.262835	encountered:             19000000	current whole logloss: 0.036100	current batch logloss: 0.034570
+2016-07-07 04:24:26.627725	encountered:             20000000	current whole logloss: 0.036045	current batch logloss: 0.035005
+2016-07-07 04:24:38.993420	encountered:             21000000	current whole logloss: 0.035993	current batch logloss: 0.034945
+2016-07-07 04:24:51.430303	encountered:             22000000	current whole logloss: 0.035939	current batch logloss: 0.034819
+2016-07-07 04:25:03.838942	encountered:             23000000	current whole logloss: 0.035800	current batch logloss: 0.032726
+2016-07-07 04:25:16.285733	encountered:             24000000	current whole logloss: 0.035646	current batch logloss: 0.032121
+2016-07-07 04:25:28.566152	encountered:             25000000	current whole logloss: 0.035519	current batch logloss: 0.032469
+2016-07-07 04:25:40.832102	encountered:             26000000	current whole logloss: 0.035393	current batch logloss: 0.032234
+2016-07-07 04:25:53.107087	encountered:             27000000	current whole logloss: 0.035238	current batch logloss: 0.031209
+2016-07-07 04:26:05.679696	encountered:             28000000	current whole logloss: 0.035234	current batch logloss: 0.035142
+2016-07-07 04:26:18.363150	encountered:             29000000	current whole logloss: 0.035234	current batch logloss: 0.035217
+2016-07-07 04:26:30.951283	encountered:             30000000	current whole logloss: 0.035223	current batch logloss: 0.034895
+2016-07-07 04:26:43.510605	encountered:             31000000	current whole logloss: 0.035240	current batch logloss: 0.035748
+2016-07-07 04:26:56.147929	encountered:             32000000	current whole logloss: 0.035150	current batch logloss: 0.032386
+2016-07-07 04:27:08.519434	encountered:             33000000	current whole logloss: 0.035031	current batch logloss: 0.031222
+2016-07-07 04:27:15.405705	encountered:             33554432	current whole logloss: 0.034973	current batch logloss: 0.031478
+2016-07-07 04:27:21.013131	encountered:             34000000	current whole logloss: 0.034926	current batch logloss: 0.031395
+2016-07-07 04:27:33.583797	encountered:             35000000	current whole logloss: 0.034804	current batch logloss: 0.030661
+2016-07-07 04:27:46.206351	encountered:             36000000	current whole logloss: 0.034702	current batch logloss: 0.031135
+2016-07-07 04:27:58.556046	encountered:             37000000	current whole logloss: 0.034609	current batch logloss: 0.031282
+2016-07-07 04:28:11.074942	encountered:             38000000	current whole logloss: 0.034541	current batch logloss: 0.031992
+2016-07-07 04:28:23.650257	encountered:             39000000	current whole logloss: 0.034448	current batch logloss: 0.030909
+2016-07-07 04:28:36.227697	encountered:             40000000	current whole logloss: 0.034392	current batch logloss: 0.032221
+2016-07-07 04:28:48.799419	encountered:             41000000	current whole logloss: 0.034332	current batch logloss: 0.031958
+2016-07-07 04:29:01.435480	encountered:             42000000	current whole logloss: 0.034280	current batch logloss: 0.032110
+2016-07-07 04:29:14.598599	encountered:             43000000	current whole logloss: 0.034264	current batch logloss: 0.033621
+2016-07-07 04:29:27.662010	encountered:             44000000	current whole logloss: 0.034254	current batch logloss: 0.033813
+2016-07-07 04:29:40.736511	encountered:             45000000	current whole logloss: 0.034224	current batch logloss: 0.032912
+2016-07-07 04:29:53.817049	encountered:             46000000	current whole logloss: 0.034203	current batch logloss: 0.033258
+2016-07-07 04:30:06.827923	encountered:             47000000	current whole logloss: 0.034183	current batch logloss: 0.033261
+2016-07-07 04:30:19.397292	encountered:             48000000	current whole logloss: 0.034162	current batch logloss: 0.033188
+2016-07-07 04:30:31.845973	encountered:             49000000	current whole logloss: 0.034175	current batch logloss: 0.034760
+2016-07-07 04:30:44.288962	encountered:             50000000	current whole logloss: 0.034185	current batch logloss: 0.034677
+2016-07-07 04:30:56.774831	encountered:             51000000	current whole logloss: 0.034164	current batch logloss: 0.033146
+2016-07-07 04:31:09.557339	encountered:             52000000	current whole logloss: 0.034155	current batch logloss: 0.033666
+2016-07-07 04:31:22.208215	encountered:             53000000	current whole logloss: 0.034184	current batch logloss: 0.035734
+2016-07-07 04:31:34.840530	encountered:             54000000	current whole logloss: 0.034242	current batch logloss: 0.037288
+2016-07-07 04:31:47.680639	encountered:             55000000	current whole logloss: 0.034280	current batch logloss: 0.036317
+2016-07-07 04:32:00.439213	encountered:             56000000	current whole logloss: 0.034323	current batch logloss: 0.036698
+2016-07-07 04:32:13.280053	encountered:             57000000	current whole logloss: 0.034357	current batch logloss: 0.036288
+2016-07-07 04:32:25.642932	encountered:             58000000	current whole logloss: 0.034338	current batch logloss: 0.033227
+2016-07-07 04:32:38.037783	encountered:             59000000	current whole logloss: 0.034313	current batch logloss: 0.032864
+2016-07-07 04:32:50.568529	encountered:             60000000	current whole logloss: 0.034291	current batch logloss: 0.033023
+2016-07-07 04:33:03.045848	encountered:             61000000	current whole logloss: 0.034284	current batch logloss: 0.033831
+2016-07-07 04:33:15.591203	encountered:             62000000	current whole logloss: 0.034263	current batch logloss: 0.033020
+2016-07-07 04:33:28.153266	encountered:             63000000	current whole logloss: 0.034257	current batch logloss: 0.033880
+2016-07-07 04:33:40.707591	encountered:             64000000	current whole logloss: 0.034229	current batch logloss: 0.032425
+2016-07-07 04:33:53.444197	encountered:             65000000	current whole logloss: 0.034210	current batch logloss: 0.033016
+2016-07-07 04:34:06.282395	encountered:             66000000	current whole logloss: 0.034183	current batch logloss: 0.032440
+2016-07-07 04:34:19.059794	encountered:             67000000	current whole logloss: 0.034160	current batch logloss: 0.032593
+2016-07-07 04:34:20.446155	encountered:             67108864	current whole logloss: 0.034161	current batch logloss: 0.035317
+2016-07-07 04:34:31.763453	encountered:             68000000	current whole logloss: 0.034139	current batch logloss: 0.032465
+2016-07-07 04:34:44.384954	encountered:             69000000	current whole logloss: 0.034128	current batch logloss: 0.033365
+2016-07-07 04:34:56.865148	encountered:             70000000	current whole logloss: 0.034078	current batch logloss: 0.030601
+2016-07-07 04:35:09.568819	encountered:             71000000	current whole logloss: 0.034020	current batch logloss: 0.030001
+2016-07-07 04:35:22.392101	encountered:             72000000	current whole logloss: 0.033963	current batch logloss: 0.029919
+2016-07-07 04:35:35.291837	encountered:             73000000	current whole logloss: 0.033900	current batch logloss: 0.029340
+2016-07-07 04:35:48.152200	encountered:             74000000	current whole logloss: 0.033850	current batch logloss: 0.030174
+2016-07-07 04:36:01.039466	encountered:             75000000	current whole logloss: 0.033802	current batch logloss: 0.030267
+2016-07-07 04:36:13.902505	encountered:             76000000	current whole logloss: 0.033755	current batch logloss: 0.030217
+2016-07-07 04:36:26.706498	encountered:             77000000	current whole logloss: 0.033697	current batch logloss: 0.029299
+2016-07-07 04:36:39.922539	encountered:             78000000	current whole logloss: 0.033623	current batch logloss: 0.027959
+2016-07-07 04:36:52.842188	encountered:             79000000	current whole logloss: 0.033555	current batch logloss: 0.028239
+2016-07-07 04:37:06.010705	encountered:             80000000	current whole logloss: 0.033483	current batch logloss: 0.027819
+2016-07-07 04:37:18.940175	encountered:             81000000	current whole logloss: 0.033408	current batch logloss: 0.027418
+2016-07-07 04:37:31.642132	encountered:             82000000	current whole logloss: 0.033342	current batch logloss: 0.027947
+2016-07-07 04:37:44.386989	encountered:             83000000	current whole logloss: 0.033276	current batch logloss: 0.027869
+2016-07-07 04:37:56.845989	encountered:             84000000	current whole logloss: 0.033215	current batch logloss: 0.028184
+2016-07-07 04:38:09.292836	encountered:             85000000	current whole logloss: 0.033155	current batch logloss: 0.028068
+2016-07-07 04:38:21.801820	encountered:             86000000	current whole logloss: 0.033094	current batch logloss: 0.027906
+2016-07-07 04:38:34.335399	encountered:             87000000	current whole logloss: 0.033039	current batch logloss: 0.028313
+2016-07-07 04:38:46.773320	encountered:             88000000	current whole logloss: 0.032987	current batch logloss: 0.028509
+2016-07-07 04:38:59.054125	encountered:             89000000	current whole logloss: 0.032961	current batch logloss: 0.030674
+2016-07-07 04:39:11.701709	encountered:             90000000	current whole logloss: 0.032944	current batch logloss: 0.031439
+2016-07-07 04:39:24.340593	encountered:             91000000	current whole logloss: 0.032919	current batch logloss: 0.030679
+2016-07-07 04:39:37.072625	encountered:             92000000	current whole logloss: 0.032903	current batch logloss: 0.031441
+2016-07-07 04:39:49.369309	encountered:             93000000	current whole logloss: 0.032898	current batch logloss: 0.032397
+2016-07-07 04:40:01.994103	encountered:             94000000	current whole logloss: 0.032891	current batch logloss: 0.032249
+2016-07-07 04:40:14.551644	encountered:             95000000	current whole logloss: 0.032887	current batch logloss: 0.032511
+2016-07-07 04:40:27.295518	encountered:             96000000	current whole logloss: 0.032843	current batch logloss: 0.028695
+2016-07-07 04:40:40.064185	encountered:             97000000	current whole logloss: 0.032796	current batch logloss: 0.028271
+2016-07-07 04:40:52.712144	encountered:             98000000	current whole logloss: 0.032749	current batch logloss: 0.028164
+2016-07-07 04:41:05.395963	encountered:             99000000	current whole logloss: 0.032711	current batch logloss: 0.029039
+2016-07-07 04:41:18.109840	encountered:            100000000	current whole logloss: 0.032678	current batch logloss: 0.029335
+2016-07-07 04:41:30.805955	encountered:            101000000	current whole logloss: 0.032642	current batch logloss: 0.029101
+2016-07-07 04:41:43.499634	encountered:            102000000	current whole logloss: 0.032650	current batch logloss: 0.033460
+2016-07-07 04:41:56.358793	encountered:            103000000	current whole logloss: 0.032677	current batch logloss: 0.035377
+2016-07-07 04:42:09.166895	encountered:            104000000	current whole logloss: 0.032724	current batch logloss: 0.037586
+2016-07-07 04:42:21.545007	encountered:            105000000	current whole logloss: 0.032789	current batch logloss: 0.039523
+2016-07-07 04:42:34.171416	encountered:            106000000	current whole logloss: 0.032860	current batch logloss: 0.040340
+2016-07-07 04:42:46.901092	encountered:            107000000	current whole logloss: 0.032963	current batch logloss: 0.043902
+2016-07-07 04:42:59.429302	encountered:            108000000	current whole logloss: 0.033047	current batch logloss: 0.041966
+2016-07-07 04:43:12.005406	encountered:            109000000	current whole logloss: 0.033105	current batch logloss: 0.039447
+2016-07-07 04:43:24.450837	encountered:            110000000	current whole logloss: 0.033164	current batch logloss: 0.039562
+2016-07-07 04:43:36.950093	encountered:            111000000	current whole logloss: 0.033212	current batch logloss: 0.038496
+2016-07-07 04:43:49.621923	encountered:            112000000	current whole logloss: 0.033248	current batch logloss: 0.037241
+2016-07-07 04:44:02.314105	encountered:            113000000	current whole logloss: 0.033274	current batch logloss: 0.036235
+2016-07-07 04:44:15.042001	encountered:            114000000	current whole logloss: 0.033308	current batch logloss: 0.037146
+2016-07-07 04:44:28.099645	encountered:            115000000	current whole logloss: 0.033347	current batch logloss: 0.037759
+2016-07-07 04:44:40.993908	encountered:            116000000	current whole logloss: 0.033389	current batch logloss: 0.038191
+2016-07-07 04:44:53.753623	encountered:            117000000	current whole logloss: 0.033423	current batch logloss: 0.037332
+2016-07-07 04:45:06.588400	encountered:            118000000	current whole logloss: 0.033464	current batch logloss: 0.038355
+2016-07-07 04:45:19.253024	encountered:            119000000	current whole logloss: 0.033526	current batch logloss: 0.040860
+2016-07-07 04:45:31.959962	encountered:            120000000	current whole logloss: 0.033588	current batch logloss: 0.040914
+2016-07-07 04:45:44.972600	encountered:            121000000	current whole logloss: 0.033648	current batch logloss: 0.040869
+2016-07-07 04:45:57.399410	encountered:            122000000	current whole logloss: 0.033650	current batch logloss: 0.033868
+2016-07-07 04:46:10.157610	encountered:            123000000	current whole logloss: 0.033651	current batch logloss: 0.033803
+2016-07-07 04:46:22.923371	encountered:            124000000	current whole logloss: 0.033650	current batch logloss: 0.033488
+2016-07-07 04:46:35.587239	encountered:            125000000	current whole logloss: 0.033652	current batch logloss: 0.033942
+2016-07-07 04:46:47.947542	encountered:            126000000	current whole logloss: 0.033648	current batch logloss: 0.033101
+2016-07-07 04:47:00.434607	encountered:            127000000	current whole logloss: 0.033644	current batch logloss: 0.033192
+2016-07-07 04:47:13.193719	encountered:            128000000	current whole logloss: 0.033645	current batch logloss: 0.033693
+2016-07-07 04:47:25.711828	encountered:            129000000	current whole logloss: 0.033637	current batch logloss: 0.032606
+2016-07-07 04:47:38.134583	encountered:            130000000	current whole logloss: 0.033654	current batch logloss: 0.035866
+2016-07-07 04:47:50.575459	encountered:            131000000	current whole logloss: 0.033673	current batch logloss: 0.036208
+2016-07-07 04:48:03.101006	encountered:            132000000	current whole logloss: 0.033695	current batch logloss: 0.036486
+2016-07-07 04:48:15.666747	encountered:            133000000	current whole logloss: 0.033715	current batch logloss: 0.036367
+2016-07-07 04:48:28.123103	encountered:            134000000	current whole logloss: 0.033738	current batch logloss: 0.036835
+2016-07-07 04:48:30.857250	encountered:            134217728	current whole logloss: 0.033743	current batch logloss: 0.036855
+2016-07-07 04:48:40.751198	encountered:            135000000	current whole logloss: 0.033767	current batch logloss: 0.037805
+2016-07-07 04:48:53.278747	encountered:            136000000	current whole logloss: 0.033794	current batch logloss: 0.037427
+2016-07-07 04:49:05.906387	encountered:            137000000	current whole logloss: 0.033823	current batch logloss: 0.037776
+2016-07-07 04:49:18.487327	encountered:            138000000	current whole logloss: 0.033850	current batch logloss: 0.037598
+2016-07-07 04:49:30.992021	encountered:            139000000	current whole logloss: 0.033877	current batch logloss: 0.037583
+2016-07-07 04:49:43.528191	encountered:            140000000	current whole logloss: 0.033903	current batch logloss: 0.037614
+2016-07-07 04:49:56.011631	encountered:            141000000	current whole logloss: 0.033930	current batch logloss: 0.037640
+2016-07-07 04:50:08.885768	encountered:            142000000	current whole logloss: 0.033945	current batch logloss: 0.036121
+2016-07-07 04:50:21.848843	encountered:            143000000	current whole logloss: 0.033959	current batch logloss: 0.035930
+2016-07-07 04:50:34.852708	encountered:            144000000	current whole logloss: 0.033975	current batch logloss: 0.036203
+2016-07-07 04:50:48.118788	encountered:            145000000	current whole logloss: 0.033992	current batch logloss: 0.036491
+2016-07-07 04:51:00.848948	encountered:            146000000	current whole logloss: 0.034000	current batch logloss: 0.035147
+2016-07-07 04:51:13.529509	encountered:            147000000	current whole logloss: 0.034013	current batch logloss: 0.035952
+2016-07-07 04:51:25.985153	encountered:            148000000	current whole logloss: 0.034025	current batch logloss: 0.035799
+2016-07-07 04:51:38.466341	encountered:            149000000	current whole logloss: 0.034036	current batch logloss: 0.035630
+2016-07-07 04:51:51.103040	encountered:            150000000	current whole logloss: 0.034044	current batch logloss: 0.035248
+2016-07-07 04:52:03.692988	encountered:            151000000	current whole logloss: 0.034062	current batch logloss: 0.036784
+2016-07-07 04:52:16.381078	encountered:            152000000	current whole logloss: 0.034093	current batch logloss: 0.038632
+2016-07-07 04:52:29.224538	encountered:            153000000	current whole logloss: 0.034122	current batch logloss: 0.038605
+2016-07-07 04:52:41.850146	encountered:            154000000	current whole logloss: 0.034149	current batch logloss: 0.038323
+2016-07-07 04:52:54.444243	encountered:            155000000	current whole logloss: 0.034174	current batch logloss: 0.038019
+2016-07-07 04:53:07.095525	encountered:            156000000	current whole logloss: 0.034197	current batch logloss: 0.037703
+2016-07-07 04:53:19.797893	encountered:            157000000	current whole logloss: 0.034208	current batch logloss: 0.035918
+2016-07-07 04:53:32.420773	encountered:            158000000	current whole logloss: 0.034216	current batch logloss: 0.035475
+2016-07-07 04:53:44.880864	encountered:            159000000	current whole logloss: 0.034224	current batch logloss: 0.035436
+2016-07-07 04:53:57.295198	encountered:            160000000	current whole logloss: 0.034233	current batch logloss: 0.035776
+2016-07-07 04:54:09.837467	encountered:            161000000	current whole logloss: 0.034243	current batch logloss: 0.035859
+2016-07-07 04:54:22.440942	encountered:            162000000	current whole logloss: 0.034245	current batch logloss: 0.034505
+2016-07-07 04:54:34.992485	encountered:            163000000	current whole logloss: 0.034246	current batch logloss: 0.034429
+2016-07-07 04:54:47.681288	encountered:            164000000	current whole logloss: 0.034248	current batch logloss: 0.034602
+2016-07-07 04:55:00.471171	encountered:            165000000	current whole logloss: 0.034250	current batch logloss: 0.034553
+2016-07-07 04:55:13.287902	encountered:            166000000	current whole logloss: 0.034254	current batch logloss: 0.034886
+2016-07-07 04:55:25.913179	encountered:            167000000	current whole logloss: 0.034253	current batch logloss: 0.034062
+2016-07-07 04:55:38.548139	encountered:            168000000	current whole logloss: 0.034250	current batch logloss: 0.033754
+2016-07-07 04:55:51.067818	encountered:            169000000	current whole logloss: 0.034244	current batch logloss: 0.033283
+2016-07-07 04:56:03.458304	encountered:            170000000	current whole logloss: 0.034238	current batch logloss: 0.033200
+2016-07-07 04:56:16.126881	encountered:            171000000	current whole logloss: 0.034232	current batch logloss: 0.033164
+2016-07-07 04:56:28.719106	encountered:            172000000	current whole logloss: 0.034224	current batch logloss: 0.032970
+2016-07-07 04:56:41.246396	encountered:            173000000	current whole logloss: 0.034216	current batch logloss: 0.032842
+2016-07-07 04:56:53.897394	encountered:            174000000	current whole logloss: 0.034208	current batch logloss: 0.032842
+2016-07-07 04:57:06.639839	encountered:            175000000	current whole logloss: 0.034199	current batch logloss: 0.032536
+2016-07-07 04:57:19.452099	encountered:            176000000	current whole logloss: 0.034186	current batch logloss: 0.031894
+2016-07-07 04:57:32.193595	encountered:            177000000	current whole logloss: 0.034168	current batch logloss: 0.031120
+2016-07-07 04:57:44.969728	encountered:            178000000	current whole logloss: 0.034157	current batch logloss: 0.032070
+2016-07-07 04:57:57.685381	encountered:            179000000	current whole logloss: 0.034142	current batch logloss: 0.031584
+2016-07-07 04:58:10.465357	encountered:            180000000	current whole logloss: 0.034126	current batch logloss: 0.031160
+2016-07-07 04:58:23.070055	encountered:            181000000	current whole logloss: 0.034124	current batch logloss: 0.033776
+2016-07-07 04:58:35.701458	encountered:            182000000	current whole logloss: 0.034119	current batch logloss: 0.033187
+2016-07-07 04:58:48.430227	encountered:            183000000	current whole logloss: 0.034108	current batch logloss: 0.032232
+2016-07-07 04:59:01.069310	encountered:            184000000	current whole logloss: 0.034100	current batch logloss: 0.032497
+2016-07-07 04:59:13.698292	encountered:            185000000	current whole logloss: 0.034111	current batch logloss: 0.036274
+2016-07-07 04:59:26.278289	encountered:            186000000	current whole logloss: 0.034126	current batch logloss: 0.036811
+2016-07-07 04:59:38.906472	encountered:            187000000	current whole logloss: 0.034141	current batch logloss: 0.036968
+2016-07-07 04:59:51.428653	encountered:            188000000	current whole logloss: 0.034170	current batch logloss: 0.039532
+2016-07-07 05:00:04.040966	encountered:            189000000	current whole logloss: 0.034195	current batch logloss: 0.038948
+2016-07-07 05:00:16.770632	encountered:            190000000	current whole logloss: 0.034213	current batch logloss: 0.037575
+2016-07-07 05:00:29.715028	encountered:            191000000	current whole logloss: 0.034221	current batch logloss: 0.035744
+2016-07-07 05:00:42.637268	encountered:            192000000	current whole logloss: 0.034228	current batch logloss: 0.035528
+2016-07-07 05:00:55.396757	encountered:            193000000	current whole logloss: 0.034219	current batch logloss: 0.032470
+2016-07-07 05:01:08.053154	encountered:            194000000	current whole logloss: 0.034210	current batch logloss: 0.032518
+2016-07-07 05:01:20.740992	encountered:            195000000	current whole logloss: 0.034209	current batch logloss: 0.034077
+2016-07-07 05:01:33.577516	encountered:            196000000	current whole logloss: 0.034226	current batch logloss: 0.037432
+2016-07-07 05:01:46.353992	encountered:            197000000	current whole logloss: 0.034245	current batch logloss: 0.038022
+2016-07-07 05:01:59.033930	encountered:            198000000	current whole logloss: 0.034261	current batch logloss: 0.037472
+2016-07-07 05:02:12.016166	encountered:            199000000	current whole logloss: 0.034283	current batch logloss: 0.038534
+2016-07-07 05:02:24.884151	encountered:            200000000	current whole logloss: 0.034322	current batch logloss: 0.042100
+2016-07-07 05:02:37.757821	encountered:            201000000	current whole logloss: 0.034367	current batch logloss: 0.043387
+2016-07-07 05:02:50.917639	encountered:            202000000	current whole logloss: 0.034416	current batch logloss: 0.044283
+2016-07-07 05:03:03.818671	encountered:            203000000	current whole logloss: 0.034461	current batch logloss: 0.043570
+2016-07-07 05:03:16.727755	encountered:            204000000	current whole logloss: 0.034502	current batch logloss: 0.042745
+2016-07-07 05:03:29.755851	encountered:            205000000	current whole logloss: 0.034534	current batch logloss: 0.041199
+2016-07-07 05:03:42.817649	encountered:            206000000	current whole logloss: 0.034565	current batch logloss: 0.040925
+2016-07-07 05:03:55.918353	encountered:            207000000	current whole logloss: 0.034594	current batch logloss: 0.040580
+2016-07-07 05:04:09.215634	encountered:            208000000	current whole logloss: 0.034628	current batch logloss: 0.041698
+2016-07-07 05:04:22.480237	encountered:            209000000	current whole logloss: 0.034664	current batch logloss: 0.042066
+2016-07-07 05:04:35.679414	encountered:            210000000	current whole logloss: 0.034698	current batch logloss: 0.041890
+2016-07-07 05:04:48.903050	encountered:            211000000	current whole logloss: 0.034734	current batch logloss: 0.042139
+2016-07-07 05:05:01.906494	encountered:            212000000	current whole logloss: 0.034755	current batch logloss: 0.039281
+2016-07-07 05:05:14.960185	encountered:            213000000	current whole logloss: 0.034778	current batch logloss: 0.039630
+2016-07-07 05:05:27.935939	encountered:            214000000	current whole logloss: 0.034798	current batch logloss: 0.039133
+2016-07-07 05:05:41.018966	encountered:            215000000	current whole logloss: 0.034823	current batch logloss: 0.040097
+2016-07-07 05:05:53.923904	encountered:            216000000	current whole logloss: 0.034852	current batch logloss: 0.041019
+2016-07-07 05:06:07.051108	encountered:            217000000	current whole logloss: 0.034882	current batch logloss: 0.041411
+2016-07-07 05:06:19.681152	encountered:            218000000	current whole logloss: 0.034909	current batch logloss: 0.040872
+2016-07-07 05:06:32.300006	encountered:            219000000	current whole logloss: 0.034928	current batch logloss: 0.038916
+2016-07-07 05:06:44.906920	encountered:            220000000	current whole logloss: 0.034946	current batch logloss: 0.038868
+2016-07-07 05:06:57.446306	encountered:            221000000	current whole logloss: 0.034961	current batch logloss: 0.038330
+2016-07-07 05:07:10.205110	encountered:            222000000	current whole logloss: 0.034980	current batch logloss: 0.039186
+2016-07-07 05:07:22.978776	encountered:            223000000	current whole logloss: 0.035000	current batch logloss: 0.039362
+2016-07-07 05:07:35.713561	encountered:            224000000	current whole logloss: 0.035019	current batch logloss: 0.039334
+2016-07-07 05:07:48.340165	encountered:            225000000	current whole logloss: 0.035036	current batch logloss: 0.038852
+2016-07-07 05:08:01.179850	encountered:            226000000	current whole logloss: 0.035057	current batch logloss: 0.039838
+2016-07-07 05:08:14.007199	encountered:            227000000	current whole logloss: 0.035075	current batch logloss: 0.039091
+2016-07-07 05:08:26.840210	encountered:            228000000	current whole logloss: 0.035095	current batch logloss: 0.039671
+2016-07-07 05:08:39.613771	encountered:            229000000	current whole logloss: 0.035112	current batch logloss: 0.039048
+2016-07-07 05:08:52.487482	encountered:            230000000	current whole logloss: 0.035125	current batch logloss: 0.038081
+2016-07-07 05:09:05.062623	encountered:            231000000	current whole logloss: 0.035138	current batch logloss: 0.038014
+2016-07-07 05:09:17.859906	encountered:            232000000	current whole logloss: 0.035150	current batch logloss: 0.038059
+2016-07-07 05:09:30.795465	encountered:            233000000	current whole logloss: 0.035175	current batch logloss: 0.040927
+2016-07-07 05:09:43.992331	encountered:            234000000	current whole logloss: 0.035210	current batch logloss: 0.043296
+2016-07-07 05:09:57.216125	encountered:            235000000	current whole logloss: 0.035247	current batch logloss: 0.043912
+2016-07-07 05:10:10.420661	encountered:            236000000	current whole logloss: 0.035281	current batch logloss: 0.043348
+2016-07-07 05:10:23.501277	encountered:            237000000	current whole logloss: 0.035293	current batch logloss: 0.038147
+2016-07-07 05:10:36.323902	encountered:            238000000	current whole logloss: 0.035302	current batch logloss: 0.037448
+2016-07-07 05:10:49.087766	encountered:            239000000	current whole logloss: 0.035313	current batch logloss: 0.037872
+2016-07-07 05:11:01.903829	encountered:            240000000	current whole logloss: 0.035326	current batch logloss: 0.038390
+2016-07-07 05:11:15.008748	encountered:            241000000	current whole logloss: 0.035336	current batch logloss: 0.037819
+2016-07-07 05:11:27.663354	encountered:            242000000	current whole logloss: 0.035353	current batch logloss: 0.039327
+2016-07-07 05:11:40.379829	encountered:            243000000	current whole logloss: 0.035370	current batch logloss: 0.039511
+2016-07-07 05:11:53.041635	encountered:            244000000	current whole logloss: 0.035388	current batch logloss: 0.039819
+2016-07-07 05:12:05.761172	encountered:            245000000	current whole logloss: 0.035404	current batch logloss: 0.039198
+2016-07-07 05:12:18.594186	encountered:            246000000	current whole logloss: 0.035424	current batch logloss: 0.040296
+2016-07-07 05:12:31.303475	encountered:            247000000	current whole logloss: 0.035451	current batch logloss: 0.042095
+2016-07-07 05:12:44.007500	encountered:            248000000	current whole logloss: 0.035472	current batch logloss: 0.040736
+2016-07-07 05:12:56.699751	encountered:            249000000	current whole logloss: 0.035495	current batch logloss: 0.041116
+2016-07-07 05:13:09.470894	encountered:            250000000	current whole logloss: 0.035518	current batch logloss: 0.041321
+2016-07-07 05:13:22.426955	encountered:            251000000	current whole logloss: 0.035543	current batch logloss: 0.041899
+2016-07-07 05:13:35.472438	encountered:            252000000	current whole logloss: 0.035570	current batch logloss: 0.042184
+2016-07-07 05:13:48.476530	encountered:            253000000	current whole logloss: 0.035594	current batch logloss: 0.041749
+2016-07-07 05:14:01.548482	encountered:            254000000	current whole logloss: 0.035616	current batch logloss: 0.041264
+2016-07-07 05:14:14.672301	encountered:            255000000	current whole logloss: 0.035627	current batch logloss: 0.038295
+2016-07-07 05:14:27.513181	encountered:            256000000	current whole logloss: 0.035618	current batch logloss: 0.033336
+2016-07-07 05:14:40.222577	encountered:            257000000	current whole logloss: 0.035607	current batch logloss: 0.032677
+2016-07-07 05:14:52.827080	encountered:            258000000	current whole logloss: 0.035599	current batch logloss: 0.033626
+2016-07-07 05:15:05.495437	encountered:            259000000	current whole logloss: 0.035589	current batch logloss: 0.033128
+2016-07-07 05:15:18.125912	encountered:            260000000	current whole logloss: 0.035581	current batch logloss: 0.033425
+2016-07-07 05:15:30.841305	encountered:            261000000	current whole logloss: 0.035564	current batch logloss: 0.031178
+2016-07-07 05:15:43.640554	encountered:            262000000	current whole logloss: 0.035542	current batch logloss: 0.029740
+2016-07-07 05:15:56.412484	encountered:            263000000	current whole logloss: 0.035523	current batch logloss: 0.030559
+2016-07-07 05:16:09.223706	encountered:            264000000	current whole logloss: 0.035503	current batch logloss: 0.030121
+2016-07-07 05:16:22.158138	encountered:            265000000	current whole logloss: 0.035484	current batch logloss: 0.030558
+2016-07-07 05:16:34.956472	encountered:            266000000	current whole logloss: 0.035466	current batch logloss: 0.030689
+2016-07-07 05:16:47.361197	encountered:            267000000	current whole logloss: 0.035444	current batch logloss: 0.029584
+2016-07-07 05:16:59.729301	encountered:            268000000	current whole logloss: 0.035424	current batch logloss: 0.030009
+2016-07-07 05:17:05.469469	encountered:            268435456	current whole logloss: 0.035415	current batch logloss: 0.030009
+2016-07-07 05:17:12.620725	encountered:            269000000	current whole logloss: 0.035404	current batch logloss: 0.030220
+2016-07-07 05:17:25.176359	encountered:            270000000	current whole logloss: 0.035383	current batch logloss: 0.029701
+2016-07-07 05:17:37.846486	encountered:            271000000	current whole logloss: 0.035364	current batch logloss: 0.030260
+2016-07-07 05:17:50.237213	encountered:            272000000	current whole logloss: 0.035348	current batch logloss: 0.030953
+2016-07-07 05:18:03.164964	encountered:            273000000	current whole logloss: 0.035328	current batch logloss: 0.030113
+2016-07-07 05:18:15.975948	encountered:            274000000	current whole logloss: 0.035312	current batch logloss: 0.030963
+2016-07-07 05:18:28.592940	encountered:            275000000	current whole logloss: 0.035296	current batch logloss: 0.030670
+2016-07-07 05:18:40.983631	encountered:            276000000	current whole logloss: 0.035288	current batch logloss: 0.033219
+2016-07-07 05:18:53.335604	encountered:            277000000	current whole logloss: 0.035279	current batch logloss: 0.032652
+2016-07-07 05:19:05.879928	encountered:            278000000	current whole logloss: 0.035271	current batch logloss: 0.033129
+2016-07-07 05:19:18.621397	encountered:            279000000	current whole logloss: 0.035260	current batch logloss: 0.032316
+2016-07-07 05:19:31.405000	encountered:            280000000	current whole logloss: 0.035250	current batch logloss: 0.032260
+2016-07-07 05:19:44.150659	encountered:            281000000	current whole logloss: 0.035237	current batch logloss: 0.031801
+2016-07-07 05:19:56.538413	encountered:            282000000	current whole logloss: 0.035225	current batch logloss: 0.031644
+2016-07-07 05:20:09.138575	encountered:            283000000	current whole logloss: 0.035213	current batch logloss: 0.032103
+2016-07-07 05:20:21.588988	encountered:            284000000	current whole logloss: 0.035201	current batch logloss: 0.031722
+2016-07-07 05:20:34.075152	encountered:            285000000	current whole logloss: 0.035200	current batch logloss: 0.034763
+2016-07-07 05:20:46.613952	encountered:            286000000	current whole logloss: 0.035206	current batch logloss: 0.036960
+2016-07-07 05:20:59.156440	encountered:            287000000	current whole logloss: 0.035212	current batch logloss: 0.036900
+2016-07-07 05:21:11.697617	encountered:            288000000	current whole logloss: 0.035220	current batch logloss: 0.037667
+2016-07-07 05:21:24.552345	encountered:            289000000	current whole logloss: 0.035228	current batch logloss: 0.037425
+2016-07-07 05:21:37.083886	encountered:            290000000	current whole logloss: 0.035243	current batch logloss: 0.039663
+2016-07-07 05:21:49.866143	encountered:            291000000	current whole logloss: 0.035260	current batch logloss: 0.040042
+2016-07-07 05:22:02.555869	encountered:            292000000	current whole logloss: 0.035285	current batch logloss: 0.042761
+2016-07-07 05:22:15.394056	encountered:            293000000	current whole logloss: 0.035318	current batch logloss: 0.044818
+2016-07-07 05:22:28.371597	encountered:            294000000	current whole logloss: 0.035352	current batch logloss: 0.045386
+2016-07-07 05:22:41.061082	encountered:            295000000	current whole logloss: 0.035382	current batch logloss: 0.044243
+2016-07-07 05:22:53.838200	encountered:            296000000	current whole logloss: 0.035410	current batch logloss: 0.043486
+2016-07-07 05:23:06.715497	encountered:            297000000	current whole logloss: 0.035437	current batch logloss: 0.043680
+2016-07-07 05:23:19.655010	encountered:            298000000	current whole logloss: 0.035460	current batch logloss: 0.042241
+2016-07-07 05:23:32.723878	encountered:            299000000	current whole logloss: 0.035479	current batch logloss: 0.041147
+2016-07-07 05:23:45.622514	encountered:            300000000	current whole logloss: 0.035501	current batch logloss: 0.042127
+2016-07-07 05:23:58.402097	encountered:            301000000	current whole logloss: 0.035527	current batch logloss: 0.043276
+2016-07-07 05:24:11.268595	encountered:            302000000	current whole logloss: 0.035555	current batch logloss: 0.044033
+2016-07-07 05:24:23.922605	encountered:            303000000	current whole logloss: 0.035580	current batch logloss: 0.043021
+2016-07-07 05:24:36.574397	encountered:            304000000	current whole logloss: 0.035606	current batch logloss: 0.043386
+2016-07-07 05:24:49.249414	encountered:            305000000	current whole logloss: 0.035628	current batch logloss: 0.042272
+2016-07-07 05:25:01.849213	encountered:            306000000	current whole logloss: 0.035650	current batch logloss: 0.042378
+2016-07-07 05:25:14.486841	encountered:            307000000	current whole logloss: 0.035673	current batch logloss: 0.042824
+2016-07-07 05:25:26.869099	encountered:            308000000	current whole logloss: 0.035686	current batch logloss: 0.039756
+2016-07-07 05:25:39.293068	encountered:            309000000	current whole logloss: 0.035701	current batch logloss: 0.040219
+2016-07-07 05:25:51.661733	encountered:            310000000	current whole logloss: 0.035718	current batch logloss: 0.041118
+2016-07-07 05:26:04.289442	encountered:            311000000	current whole logloss: 0.035733	current batch logloss: 0.040356
+2016-07-07 05:26:16.841182	encountered:            312000000	current whole logloss: 0.035743	current batch logloss: 0.038658
+2016-07-07 05:26:29.648227	encountered:            313000000	current whole logloss: 0.035753	current batch logloss: 0.039004
+2016-07-07 05:26:42.264048	encountered:            314000000	current whole logloss: 0.035763	current batch logloss: 0.038978
+2016-07-07 05:26:54.868766	encountered:            315000000	current whole logloss: 0.035773	current batch logloss: 0.038755
+2016-07-07 05:27:07.544501	encountered:            316000000	current whole logloss: 0.035791	current batch logloss: 0.041605
+2016-07-07 05:27:20.053414	encountered:            317000000	current whole logloss: 0.035812	current batch logloss: 0.042229
+2016-07-07 05:27:32.617896	encountered:            318000000	current whole logloss: 0.035829	current batch logloss: 0.041297
+2016-07-07 05:27:45.119229	encountered:            319000000	current whole logloss: 0.035849	current batch logloss: 0.042282
+2016-07-07 05:27:57.698897	encountered:            320000000	current whole logloss: 0.035867	current batch logloss: 0.041416
+2016-07-07 05:28:10.502973	encountered:            321000000	current whole logloss: 0.035883	current batch logloss: 0.041022
+2016-07-07 05:28:23.117148	encountered:            322000000	current whole logloss: 0.035902	current batch logloss: 0.042117
+2016-07-07 05:28:35.810896	encountered:            323000000	current whole logloss: 0.035917	current batch logloss: 0.040794
+2016-07-07 05:28:48.568058	encountered:            324000000	current whole logloss: 0.035932	current batch logloss: 0.040880
+2016-07-07 05:29:01.547979	encountered:            325000000	current whole logloss: 0.035942	current batch logloss: 0.039159
+2016-07-07 05:29:14.615062	encountered:            326000000	current whole logloss: 0.035952	current batch logloss: 0.038993
+2016-07-07 05:29:27.545887	encountered:            327000000	current whole logloss: 0.035962	current batch logloss: 0.039400
+2016-07-07 05:29:40.657432	encountered:            328000000	current whole logloss: 0.035971	current batch logloss: 0.038662
+2016-07-07 05:29:53.710005	encountered:            329000000	current whole logloss: 0.035981	current batch logloss: 0.039440
+2016-07-07 05:30:06.223408	encountered:            330000000	current whole logloss: 0.035976	current batch logloss: 0.034440
+2016-07-07 05:30:18.673333	encountered:            331000000	current whole logloss: 0.035971	current batch logloss: 0.034174
+2016-07-07 05:30:31.144399	encountered:            332000000	current whole logloss: 0.035966	current batch logloss: 0.034271
+2016-07-07 05:30:43.529998	encountered:            333000000	current whole logloss: 0.035961	current batch logloss: 0.034298
+2016-07-07 05:30:55.893727	encountered:            334000000	current whole logloss: 0.035957	current batch logloss: 0.034679
+2016-07-07 05:31:08.474301	encountered:            335000000	current whole logloss: 0.035953	current batch logloss: 0.034473
+2016-07-07 05:31:21.004678	encountered:            336000000	current whole logloss: 0.035948	current batch logloss: 0.034425
+2016-07-07 05:31:33.786216	encountered:            337000000	current whole logloss: 0.035944	current batch logloss: 0.034718
+2016-07-07 05:31:46.393671	encountered:            338000000	current whole logloss: 0.035941	current batch logloss: 0.034930
+2016-07-07 05:31:59.001106	encountered:            339000000	current whole logloss: 0.035940	current batch logloss: 0.035308
+2016-07-07 05:32:11.618126	encountered:            340000000	current whole logloss: 0.035935	current batch logloss: 0.034257
+2016-07-07 05:32:24.231663	encountered:            341000000	current whole logloss: 0.035929	current batch logloss: 0.034101
+2016-07-07 05:32:36.685383	encountered:            342000000	current whole logloss: 0.035924	current batch logloss: 0.034143
+2016-07-07 05:32:49.101246	encountered:            343000000	current whole logloss: 0.035920	current batch logloss: 0.034581
+2016-07-07 05:33:01.513508	encountered:            344000000	current whole logloss: 0.035922	current batch logloss: 0.036666
+2016-07-07 05:33:14.120045	encountered:            345000000	current whole logloss: 0.035931	current batch logloss: 0.039044
+2016-07-07 05:33:26.885743	encountered:            346000000	current whole logloss: 0.035941	current batch logloss: 0.039138
+2016-07-07 05:33:39.730256	encountered:            347000000	current whole logloss: 0.035948	current batch logloss: 0.038564
+2016-07-07 05:33:52.460213	encountered:            348000000	current whole logloss: 0.035957	current batch logloss: 0.039030
+2016-07-07 05:34:05.303213	encountered:            349000000	current whole logloss: 0.035966	current batch logloss: 0.039190
+2016-07-07 05:34:18.066898	encountered:            350000000	current whole logloss: 0.035974	current batch logloss: 0.038795
+2016-07-07 05:34:30.718699	encountered:            351000000	current whole logloss: 0.035981	current batch logloss: 0.038421
+2016-07-07 05:34:43.311013	encountered:            352000000	current whole logloss: 0.035990	current batch logloss: 0.039149
+2016-07-07 05:34:56.065893	encountered:            353000000	current whole logloss: 0.036000	current batch logloss: 0.039366
+2016-07-07 05:35:08.939465	encountered:            354000000	current whole logloss: 0.036010	current batch logloss: 0.039689
+2016-07-07 05:35:21.852440	encountered:            355000000	current whole logloss: 0.036019	current batch logloss: 0.039270
+2016-07-07 05:35:34.534160	encountered:            356000000	current whole logloss: 0.036028	current batch logloss: 0.038904
+2016-07-07 05:35:47.149494	encountered:            357000000	current whole logloss: 0.036030	current batch logloss: 0.036874
+2016-07-07 05:35:59.556258	encountered:            358000000	current whole logloss: 0.036028	current batch logloss: 0.035266
+2016-07-07 05:36:12.200372	encountered:            359000000	current whole logloss: 0.036024	current batch logloss: 0.034819
+2016-07-07 05:36:24.880559	encountered:            360000000	current whole logloss: 0.036021	current batch logloss: 0.034837
+2016-07-07 05:36:37.781238	encountered:            361000000	current whole logloss: 0.036016	current batch logloss: 0.034330
+2016-07-07 05:36:50.533293	encountered:            362000000	current whole logloss: 0.036013	current batch logloss: 0.034640
+2016-07-07 05:37:03.362210	encountered:            363000000	current whole logloss: 0.036008	current batch logloss: 0.034389
+2016-07-07 05:37:16.253406	encountered:            364000000	current whole logloss: 0.035997	current batch logloss: 0.031910
+2016-07-07 05:37:29.164393	encountered:            365000000	current whole logloss: 0.035986	current batch logloss: 0.032143
+2016-07-07 05:37:42.047596	encountered:            366000000	current whole logloss: 0.035977	current batch logloss: 0.032669
+2016-07-07 05:37:55.000993	encountered:            367000000	current whole logloss: 0.035966	current batch logloss: 0.031849
+2016-07-07 05:38:07.970153	encountered:            368000000	current whole logloss: 0.035955	current batch logloss: 0.032061
+2016-07-07 05:38:20.892744	encountered:            369000000	current whole logloss: 0.035943	current batch logloss: 0.031449
+2016-07-07 05:38:33.631251	encountered:            370000000	current whole logloss: 0.035934	current batch logloss: 0.032498
+2016-07-07 05:38:46.206432	encountered:            371000000	current whole logloss: 0.035926	current batch logloss: 0.032860
+2016-07-07 05:38:58.670681	encountered:            372000000	current whole logloss: 0.035916	current batch logloss: 0.032410
+2016-07-07 05:39:11.223256	encountered:            373000000	current whole logloss: 0.035906	current batch logloss: 0.031972
+2016-07-07 05:39:23.785788	encountered:            374000000	current whole logloss: 0.035898	current batch logloss: 0.032907
+2016-07-07 05:39:36.362193	encountered:            375000000	current whole logloss: 0.035890	current batch logloss: 0.033095
+2016-07-07 05:39:48.813328	encountered:            376000000	current whole logloss: 0.035883	current batch logloss: 0.033052
+2016-07-07 05:40:01.295221	encountered:            377000000	current whole logloss: 0.035875	current batch logloss: 0.032875
+2016-07-07 05:40:13.807703	encountered:            378000000	current whole logloss: 0.035867	current batch logloss: 0.033042
+2016-07-07 05:40:26.257023	encountered:            379000000	current whole logloss: 0.035854	current batch logloss: 0.030911
+2016-07-07 05:40:38.645608	encountered:            380000000	current whole logloss: 0.035838	current batch logloss: 0.029796
+2016-07-07 05:40:51.508355	encountered:            381000000	current whole logloss: 0.035822	current batch logloss: 0.029651
+2016-07-07 05:41:03.898106	encountered:            382000000	current whole logloss: 0.035807	current batch logloss: 0.030083
+2016-07-07 05:41:16.400225	encountered:            383000000	current whole logloss: 0.035796	current batch logloss: 0.031833
+2016-07-07 05:41:28.890061	encountered:            384000000	current whole logloss: 0.035790	current batch logloss: 0.033256
+2016-07-07 05:41:41.591338	encountered:            385000000	current whole logloss: 0.035782	current batch logloss: 0.032617
+2016-07-07 05:41:53.992966	encountered:            386000000	current whole logloss: 0.035770	current batch logloss: 0.031369
+2016-07-07 05:42:06.328432	encountered:            387000000	current whole logloss: 0.035759	current batch logloss: 0.031282
+2016-07-07 05:42:18.692206	encountered:            388000000	current whole logloss: 0.035747	current batch logloss: 0.031434
+2016-07-07 05:42:31.090014	encountered:            389000000	current whole logloss: 0.035744	current batch logloss: 0.034348
+2016-07-07 05:42:43.523897	encountered:            390000000	current whole logloss: 0.035749	current batch logloss: 0.037921
+2016-07-07 05:42:56.013560	encountered:            391000000	current whole logloss: 0.035755	current batch logloss: 0.038134
+2016-07-07 05:43:08.537087	encountered:            392000000	current whole logloss: 0.035773	current batch logloss: 0.042782
+2016-07-07 05:43:21.142047	encountered:            393000000	current whole logloss: 0.035797	current batch logloss: 0.044947
+2016-07-07 05:43:33.681594	encountered:            394000000	current whole logloss: 0.035821	current batch logloss: 0.045536
+2016-07-07 05:43:46.237629	encountered:            395000000	current whole logloss: 0.035850	current batch logloss: 0.047256
+2016-07-07 05:43:58.735831	encountered:            396000000	current whole logloss: 0.035883	current batch logloss: 0.048688
+2016-07-07 05:44:11.272443	encountered:            397000000	current whole logloss: 0.035917	current batch logloss: 0.049379
+2016-07-07 05:44:23.742976	encountered:            398000000	current whole logloss: 0.035952	current batch logloss: 0.050039
+2016-07-07 05:44:36.253990	encountered:            399000000	current whole logloss: 0.035983	current batch logloss: 0.048355
+2016-07-07 05:44:48.900184	encountered:            400000000	current whole logloss: 0.036009	current batch logloss: 0.046385
+2016-07-07 05:45:01.583448	encountered:            401000000	current whole logloss: 0.036035	current batch logloss: 0.046280
+2016-07-07 05:45:14.429279	encountered:            402000000	current whole logloss: 0.036059	current batch logloss: 0.045828
+2016-07-07 05:45:27.288579	encountered:            403000000	current whole logloss: 0.036082	current batch logloss: 0.045066
+2016-07-07 05:45:40.129257	encountered:            404000000	current whole logloss: 0.036104	current batch logloss: 0.045068
+2016-07-07 05:45:53.024012	encountered:            405000000	current whole logloss: 0.036125	current batch logloss: 0.044636
+2016-07-07 05:46:05.805891	encountered:            406000000	current whole logloss: 0.036146	current batch logloss: 0.044576
+2016-07-07 05:46:18.483803	encountered:            407000000	current whole logloss: 0.036170	current batch logloss: 0.045785
+2016-07-07 05:46:31.193792	encountered:            408000000	current whole logloss: 0.036191	current batch logloss: 0.044904
+2016-07-07 05:46:43.818864	encountered:            409000000	current whole logloss: 0.036213	current batch logloss: 0.045040
+2016-07-07 05:46:56.523857	encountered:            410000000	current whole logloss: 0.036228	current batch logloss: 0.042501
+2016-07-07 05:47:09.194360	encountered:            411000000	current whole logloss: 0.036245	current batch logloss: 0.043309
+2016-07-07 05:47:21.616920	encountered:            412000000	current whole logloss: 0.036261	current batch logloss: 0.042856
+2016-07-07 05:47:34.005556	encountered:            413000000	current whole logloss: 0.036278	current batch logloss: 0.043256
+2016-07-07 05:47:46.420465	encountered:            414000000	current whole logloss: 0.036294	current batch logloss: 0.042775
+2016-07-07 05:47:58.982517	encountered:            415000000	current whole logloss: 0.036311	current batch logloss: 0.043310
+2016-07-07 05:48:11.652720	encountered:            416000000	current whole logloss: 0.036327	current batch logloss: 0.042964
+2016-07-07 05:48:24.303772	encountered:            417000000	current whole logloss: 0.036344	current batch logloss: 0.043466
+2016-07-07 05:48:36.638519	encountered:            418000000	current whole logloss: 0.036365	current batch logloss: 0.045237
+2016-07-07 05:48:48.980451	encountered:            419000000	current whole logloss: 0.036383	current batch logloss: 0.043969
+2016-07-07 05:49:01.343493	encountered:            420000000	current whole logloss: 0.036403	current batch logloss: 0.044599
+2016-07-07 05:49:14.007950	encountered:            421000000	current whole logloss: 0.036422	current batch logloss: 0.044540
+2016-07-07 05:49:26.423977	encountered:            422000000	current whole logloss: 0.036438	current batch logloss: 0.043115
+2016-07-07 05:49:38.813083	encountered:            423000000	current whole logloss: 0.036451	current batch logloss: 0.041995
+2016-07-07 05:49:51.283660	encountered:            424000000	current whole logloss: 0.036466	current batch logloss: 0.042699
+2016-07-07 05:50:03.937283	encountered:            425000000	current whole logloss: 0.036478	current batch logloss: 0.041784
+2016-07-07 05:50:16.448091	encountered:            426000000	current whole logloss: 0.036489	current batch logloss: 0.041216
+2016-07-07 05:50:29.017497	encountered:            427000000	current whole logloss: 0.036500	current batch logloss: 0.041113
+2016-07-07 05:50:41.435671	encountered:            428000000	current whole logloss: 0.036512	current batch logloss: 0.041620
+2016-07-07 05:50:53.840190	encountered:            429000000	current whole logloss: 0.036523	current batch logloss: 0.041056
+2016-07-07 05:51:06.622670	encountered:            430000000	current whole logloss: 0.036528	current batch logloss: 0.038578
+2016-07-07 05:51:19.470320	encountered:            431000000	current whole logloss: 0.036534	current batch logloss: 0.039118
+2016-07-07 05:51:32.459246	encountered:            432000000	current whole logloss: 0.036542	current batch logloss: 0.040001
+2016-07-07 05:51:45.508381	encountered:            433000000	current whole logloss: 0.036548	current batch logloss: 0.039123
+2016-07-07 05:51:58.645970	encountered:            434000000	current whole logloss: 0.036554	current batch logloss: 0.039369
+2016-07-07 05:52:11.164496	encountered:            435000000	current whole logloss: 0.036562	current batch logloss: 0.039792
+2016-07-07 05:52:23.616113	encountered:            436000000	current whole logloss: 0.036569	current batch logloss: 0.039662
+2016-07-07 05:52:36.258741	encountered:            437000000	current whole logloss: 0.036577	current batch logloss: 0.040385
+2016-07-07 05:52:48.867796	encountered:            438000000	current whole logloss: 0.036585	current batch logloss: 0.039795
+2016-07-07 05:53:01.401058	encountered:            439000000	current whole logloss: 0.036593	current batch logloss: 0.040279
+2016-07-07 05:53:14.118544	encountered:            440000000	current whole logloss: 0.036606	current batch logloss: 0.042350
+2016-07-07 05:53:26.876415	encountered:            441000000	current whole logloss: 0.036617	current batch logloss: 0.041324
+2016-07-07 05:53:39.471247	encountered:            442000000	current whole logloss: 0.036626	current batch logloss: 0.040705
+2016-07-07 05:53:52.004488	encountered:            443000000	current whole logloss: 0.036638	current batch logloss: 0.041804
+2016-07-07 05:54:04.697939	encountered:            444000000	current whole logloss: 0.036650	current batch logloss: 0.041961
+2016-07-07 05:54:17.261159	encountered:            445000000	current whole logloss: 0.036659	current batch logloss: 0.040570
+2016-07-07 05:54:29.678528	encountered:            446000000	current whole logloss: 0.036668	current batch logloss: 0.040886
+2016-07-07 05:54:42.157214	encountered:            447000000	current whole logloss: 0.036678	current batch logloss: 0.041048
+2016-07-07 05:54:54.742181	encountered:            448000000	current whole logloss: 0.036686	current batch logloss: 0.040195
+2016-07-07 05:55:07.456229	encountered:            449000000	current whole logloss: 0.036695	current batch logloss: 0.040895
+2016-07-07 05:55:20.089602	encountered:            450000000	current whole logloss: 0.036701	current batch logloss: 0.039104
+2016-07-07 05:55:32.864484	encountered:            451000000	current whole logloss: 0.036703	current batch logloss: 0.037914
+2016-07-07 05:55:45.654723	encountered:            452000000	current whole logloss: 0.036707	current batch logloss: 0.038192
+2016-07-07 05:55:58.461337	encountered:            453000000	current whole logloss: 0.036710	current batch logloss: 0.038254
+2016-07-07 05:56:11.298901	encountered:            454000000	current whole logloss: 0.036712	current batch logloss: 0.037766
+2016-07-07 05:56:24.080295	encountered:            455000000	current whole logloss: 0.036715	current batch logloss: 0.037996
+2016-07-07 05:56:36.656372	encountered:            456000000	current whole logloss: 0.036706	current batch logloss: 0.032646
+2016-07-07 05:56:49.248625	encountered:            457000000	current whole logloss: 0.036697	current batch logloss: 0.032652
+2016-07-07 05:57:02.290780	encountered:            458000000	current whole logloss: 0.036689	current batch logloss: 0.032730
+2016-07-07 05:57:15.237898	encountered:            459000000	current whole logloss: 0.036681	current batch logloss: 0.033055
+2016-07-07 05:57:27.999983	encountered:            460000000	current whole logloss: 0.036673	current batch logloss: 0.032977
+2016-07-07 05:57:40.844197	encountered:            461000000	current whole logloss: 0.036665	current batch logloss: 0.033102
+2016-07-07 05:57:53.530829	encountered:            462000000	current whole logloss: 0.036653	current batch logloss: 0.031263
+2016-07-07 05:58:06.338404	encountered:            463000000	current whole logloss: 0.036639	current batch logloss: 0.030242
+2016-07-07 05:58:19.311272	encountered:            464000000	current whole logloss: 0.036625	current batch logloss: 0.029854
+2016-07-07 05:58:32.202826	encountered:            465000000	current whole logloss: 0.036612	current batch logloss: 0.030644
+2016-07-07 05:58:44.985579	encountered:            466000000	current whole logloss: 0.036598	current batch logloss: 0.030287
+2016-07-07 05:58:57.692857	encountered:            467000000	current whole logloss: 0.036586	current batch logloss: 0.030779
+2016-07-07 05:59:10.282592	encountered:            468000000	current whole logloss: 0.036573	current batch logloss: 0.030768
+2016-07-07 05:59:22.697662	encountered:            469000000	current whole logloss: 0.036566	current batch logloss: 0.033294
+2016-07-07 05:59:35.175064	encountered:            470000000	current whole logloss: 0.036558	current batch logloss: 0.032716
+2016-07-07 05:59:47.621618	encountered:            471000000	current whole logloss: 0.036550	current batch logloss: 0.032670
+2016-07-07 06:00:00.075201	encountered:            472000000	current whole logloss: 0.036541	current batch logloss: 0.032394
+2016-07-07 06:00:12.601448	encountered:            473000000	current whole logloss: 0.036534	current batch logloss: 0.033189
+2016-07-07 06:00:24.960529	encountered:            474000000	current whole logloss: 0.036529	current batch logloss: 0.034225
+2016-07-07 06:00:37.319847	encountered:            475000000	current whole logloss: 0.036524	current batch logloss: 0.034146
+2016-07-07 06:00:49.721480	encountered:            476000000	current whole logloss: 0.036519	current batch logloss: 0.034185
+2016-07-07 06:01:02.256179	encountered:            477000000	current whole logloss: 0.036513	current batch logloss: 0.033339
+2016-07-07 06:01:14.701143	encountered:            478000000	current whole logloss: 0.036507	current batch logloss: 0.033759
+2016-07-07 06:01:27.081517	encountered:            479000000	current whole logloss: 0.036501	current batch logloss: 0.033592
+2016-07-07 06:01:39.619125	encountered:            480000000	current whole logloss: 0.036490	current batch logloss: 0.031139
+2016-07-07 06:01:52.379001	encountered:            481000000	current whole logloss: 0.036478	current batch logloss: 0.030823
+2016-07-07 06:02:05.328507	encountered:            482000000	current whole logloss: 0.036467	current batch logloss: 0.031385
+2016-07-07 06:02:17.970552	encountered:            483000000	current whole logloss: 0.036458	current batch logloss: 0.031986
+2016-07-07 06:02:30.204129	encountered:            484000000	current whole logloss: 0.036451	current batch logloss: 0.033235
+2016-07-07 06:02:42.671181	encountered:            485000000	current whole logloss: 0.036445	current batch logloss: 0.033593
+2016-07-07 06:02:55.178187	encountered:            486000000	current whole logloss: 0.036438	current batch logloss: 0.032961
+2016-07-07 06:03:07.671284	encountered:            487000000	current whole logloss: 0.036440	current batch logloss: 0.037087
+2016-07-07 06:03:20.339791	encountered:            488000000	current whole logloss: 0.036446	current batch logloss: 0.039659
+2016-07-07 06:03:33.006281	encountered:            489000000	current whole logloss: 0.036452	current batch logloss: 0.039057
+2016-07-07 06:03:45.544913	encountered:            490000000	current whole logloss: 0.036460	current batch logloss: 0.040763
+2016-07-07 06:03:58.175553	encountered:            491000000	current whole logloss: 0.036471	current batch logloss: 0.041621
+2016-07-07 06:04:10.889673	encountered:            492000000	current whole logloss: 0.036483	current batch logloss: 0.042504
+2016-07-07 06:04:23.687935	encountered:            493000000	current whole logloss: 0.036500	current batch logloss: 0.044962
+2016-07-07 06:04:36.384656	encountered:            494000000	current whole logloss: 0.036522	current batch logloss: 0.047417
+2016-07-07 06:04:49.085875	encountered:            495000000	current whole logloss: 0.036556	current batch logloss: 0.053277
+2016-07-07 06:05:01.624390	encountered:            496000000	current whole logloss: 0.036590	current batch logloss: 0.053301
+2016-07-07 06:05:14.238562	encountered:            497000000	current whole logloss: 0.036619	current batch logloss: 0.051085
+2016-07-07 06:05:26.878967	encountered:            498000000	current whole logloss: 0.036637	current batch logloss: 0.045410
+2016-07-07 06:05:39.695837	encountered:            499000000	current whole logloss: 0.036656	current batch logloss: 0.046348
+2016-07-07 06:05:52.525376	encountered:            500000000	current whole logloss: 0.036675	current batch logloss: 0.045861
+2016-07-07 06:06:05.420931	encountered:            501000000	current whole logloss: 0.036684	current batch logloss: 0.041276
+2016-07-07 06:06:18.523151	encountered:            502000000	current whole logloss: 0.036693	current batch logloss: 0.041026
+2016-07-07 06:06:31.527236	encountered:            503000000	current whole logloss: 0.036700	current batch logloss: 0.040533
+2016-07-07 06:06:44.424914	encountered:            504000000	current whole logloss: 0.036709	current batch logloss: 0.041281
+2016-07-07 06:06:57.005175	encountered:            505000000	current whole logloss: 0.036713	current batch logloss: 0.038435
+2016-07-07 06:07:09.925242	encountered:            506000000	current whole logloss: 0.036717	current batch logloss: 0.038756
+2016-07-07 06:07:22.904295	encountered:            507000000	current whole logloss: 0.036720	current batch logloss: 0.038511
+2016-07-07 06:07:35.820594	encountered:            508000000	current whole logloss: 0.036723	current batch logloss: 0.038099
+2016-07-07 06:07:48.166919	encountered:            509000000	current whole logloss: 0.036728	current batch logloss: 0.039240
+2016-07-07 06:08:00.640110	encountered:            510000000	current whole logloss: 0.036732	current batch logloss: 0.038886
+2016-07-07 06:08:13.599075	encountered:            511000000	current whole logloss: 0.036734	current batch logloss: 0.037830
+2016-07-07 06:08:26.333612	encountered:            512000000	current whole logloss: 0.036739	current batch logloss: 0.039018
+2016-07-07 06:08:39.027172	encountered:            513000000	current whole logloss: 0.036743	current batch logloss: 0.038818
+2016-07-07 06:08:51.527411	encountered:            514000000	current whole logloss: 0.036745	current batch logloss: 0.037864
+2016-07-07 06:09:04.049032	encountered:            515000000	current whole logloss: 0.036747	current batch logloss: 0.037982
+2016-07-07 06:09:16.618540	encountered:            516000000	current whole logloss: 0.036750	current batch logloss: 0.037944
+2016-07-07 06:09:29.121979	encountered:            517000000	current whole logloss: 0.036752	current batch logloss: 0.038048
+2016-07-07 06:09:41.524442	encountered:            518000000	current whole logloss: 0.036755	current batch logloss: 0.038245
+2016-07-07 06:09:53.908263	encountered:            519000000	current whole logloss: 0.036760	current batch logloss: 0.039444
+2016-07-07 06:10:06.481457	encountered:            520000000	current whole logloss: 0.036765	current batch logloss: 0.039298
+2016-07-07 06:10:19.385712	encountered:            521000000	current whole logloss: 0.036770	current batch logloss: 0.039456
+2016-07-07 06:10:31.792449	encountered:            522000000	current whole logloss: 0.036775	current batch logloss: 0.039344
+2016-07-07 06:10:44.427942	encountered:            523000000	current whole logloss: 0.036780	current batch logloss: 0.039101
+2016-07-07 06:10:57.002757	encountered:            524000000	current whole logloss: 0.036781	current batch logloss: 0.037576
+2016-07-07 06:11:09.862267	encountered:            525000000	current whole logloss: 0.036782	current batch logloss: 0.037009
+2016-07-07 06:11:22.626917	encountered:            526000000	current whole logloss: 0.036781	current batch logloss: 0.036561
+2016-07-07 06:11:35.364411	encountered:            527000000	current whole logloss: 0.036782	current batch logloss: 0.036914
+2016-07-07 06:11:48.047114	encountered:            528000000	current whole logloss: 0.036782	current batch logloss: 0.037074
+2016-07-07 06:12:00.627905	encountered:            529000000	current whole logloss: 0.036785	current batch logloss: 0.038243
+2016-07-07 06:12:13.189071	encountered:            530000000	current whole logloss: 0.036789	current batch logloss: 0.039009
+2016-07-07 06:12:26.084262	encountered:            531000000	current whole logloss: 0.036792	current batch logloss: 0.038405
+2016-07-07 06:12:38.795476	encountered:            532000000	current whole logloss: 0.036795	current batch logloss: 0.038536
+2016-07-07 06:12:51.572837	encountered:            533000000	current whole logloss: 0.036797	current batch logloss: 0.037880
+2016-07-07 06:13:04.316849	encountered:            534000000	current whole logloss: 0.036800	current batch logloss: 0.038180
+2016-07-07 06:13:17.336102	encountered:            535000000	current whole logloss: 0.036801	current batch logloss: 0.037455
+2016-07-07 06:13:30.087671	encountered:            536000000	current whole logloss: 0.036803	current batch logloss: 0.037892
+2016-07-07 06:13:41.172607	encountered:            536870912	current whole logloss: 0.036805	current batch logloss: 0.037739
+2016-07-07 06:13:42.809070	encountered:            537000000	current whole logloss: 0.036804	current batch logloss: 0.033699
+2016-07-07 06:13:55.523394	encountered:            538000000	current whole logloss: 0.036805	current batch logloss: 0.037444
+2016-07-07 06:14:08.435276	encountered:            539000000	current whole logloss: 0.036807	current batch logloss: 0.037604
+2016-07-07 06:14:20.931842	encountered:            540000000	current whole logloss: 0.036815	current batch logloss: 0.041033
+2016-07-07 06:14:33.180717	encountered:            541000000	current whole logloss: 0.036824	current batch logloss: 0.042112
+2016-07-07 06:14:45.478203	encountered:            542000000	current whole logloss: 0.036834	current batch logloss: 0.042344
+2016-07-07 06:14:57.753149	encountered:            543000000	current whole logloss: 0.036844	current batch logloss: 0.042210
+2016-07-07 06:15:10.107107	encountered:            544000000	current whole logloss: 0.036856	current batch logloss: 0.043254
+2016-07-07 06:15:22.684714	encountered:            545000000	current whole logloss: 0.036891	current batch logloss: 0.055997
+2016-07-07 06:15:35.342163	encountered:            546000000	current whole logloss: 0.036928	current batch logloss: 0.057091
+2016-07-07 06:15:48.233477	encountered:            547000000	current whole logloss: 0.036965	current batch logloss: 0.056840
+2016-07-07 06:16:00.846082	encountered:            548000000	current whole logloss: 0.036995	current batch logloss: 0.053765
+2016-07-07 06:16:13.724478	encountered:            549000000	current whole logloss: 0.037026	current batch logloss: 0.053953
+2016-07-07 06:16:26.463858	encountered:            550000000	current whole logloss: 0.037056	current batch logloss: 0.053212
+2016-07-07 06:16:39.182063	encountered:            551000000	current whole logloss: 0.037084	current batch logloss: 0.052694
+2016-07-07 06:16:51.899431	encountered:            552000000	current whole logloss: 0.037106	current batch logloss: 0.049252
+2016-07-07 06:17:04.901879	encountered:            553000000	current whole logloss: 0.037126	current batch logloss: 0.048314
+2016-07-07 06:17:17.650864	encountered:            554000000	current whole logloss: 0.037146	current batch logloss: 0.048158
+2016-07-07 06:17:30.363996	encountered:            555000000	current whole logloss: 0.037166	current batch logloss: 0.047908
+2016-07-07 06:17:42.930266	encountered:            556000000	current whole logloss: 0.037181	current batch logloss: 0.045918
+2016-07-07 06:17:55.645680	encountered:            557000000	current whole logloss: 0.037198	current batch logloss: 0.046372
+2016-07-07 06:18:08.418486	encountered:            558000000	current whole logloss: 0.037214	current batch logloss: 0.046359
+2016-07-07 06:18:21.054673	encountered:            559000000	current whole logloss: 0.037229	current batch logloss: 0.045473
+2016-07-07 06:18:33.880334	encountered:            560000000	current whole logloss: 0.037241	current batch logloss: 0.044031
+2016-07-07 06:18:46.623768	encountered:            561000000	current whole logloss: 0.037253	current batch logloss: 0.043784
+2016-07-07 06:18:59.399301	encountered:            562000000	current whole logloss: 0.037266	current batch logloss: 0.044776
+2016-07-07 06:19:11.963142	encountered:            563000000	current whole logloss: 0.037271	current batch logloss: 0.040005
+2016-07-07 06:19:24.631228	encountered:            564000000	current whole logloss: 0.037274	current batch logloss: 0.038754
+2016-07-07 06:19:37.293793	encountered:            565000000	current whole logloss: 0.037277	current batch logloss: 0.038968
+2016-07-07 06:19:49.882497	encountered:            566000000	current whole logloss: 0.037280	current batch logloss: 0.038875
+2016-07-07 06:20:02.473366	encountered:            567000000	current whole logloss: 0.037281	current batch logloss: 0.038027
+2016-07-07 06:20:15.114005	encountered:            568000000	current whole logloss: 0.037280	current batch logloss: 0.036583
+2016-07-07 06:20:27.708341	encountered:            569000000	current whole logloss: 0.037280	current batch logloss: 0.037423
+2016-07-07 06:20:40.359308	encountered:            570000000	current whole logloss: 0.037279	current batch logloss: 0.036690
+2016-07-07 06:20:52.856695	encountered:            571000000	current whole logloss: 0.037273	current batch logloss: 0.034085
+2016-07-07 06:21:05.314823	encountered:            572000000	current whole logloss: 0.037266	current batch logloss: 0.033095
+2016-07-07 06:21:17.801877	encountered:            573000000	current whole logloss: 0.037259	current batch logloss: 0.032994
+2016-07-07 06:21:30.322419	encountered:            574000000	current whole logloss: 0.037251	current batch logloss: 0.032782
+2016-07-07 06:21:43.066198	encountered:            575000000	current whole logloss: 0.037241	current batch logloss: 0.031879
+2016-07-07 06:21:55.604849	encountered:            576000000	current whole logloss: 0.037230	current batch logloss: 0.030953
+2016-07-07 06:22:08.317221	encountered:            577000000	current whole logloss: 0.037221	current batch logloss: 0.031771
+2016-07-07 06:22:21.150572	encountered:            578000000	current whole logloss: 0.037211	current batch logloss: 0.031511
+2016-07-07 06:22:34.303035	encountered:            579000000	current whole logloss: 0.037198	current batch logloss: 0.029753
+2016-07-07 06:22:46.955817	encountered:            580000000	current whole logloss: 0.037186	current batch logloss: 0.030116
+2016-07-07 06:22:59.649937	encountered:            581000000	current whole logloss: 0.037174	current batch logloss: 0.029921
+2016-07-07 06:23:12.383586	encountered:            582000000	current whole logloss: 0.037161	current batch logloss: 0.029622
+2016-07-07 06:23:25.205940	encountered:            583000000	current whole logloss: 0.037163	current batch logloss: 0.038441
+2016-07-07 06:23:38.141110	encountered:            584000000	current whole logloss: 0.037169	current batch logloss: 0.040811
+2016-07-07 06:23:51.012034	encountered:            585000000	current whole logloss: 0.037176	current batch logloss: 0.041111
+2016-07-07 06:24:03.749289	encountered:            586000000	current whole logloss: 0.037189	current batch logloss: 0.045069
+2016-07-07 06:24:16.301540	encountered:            587000000	current whole logloss: 0.037201	current batch logloss: 0.044321
+2016-07-07 06:24:29.119068	encountered:            588000000	current whole logloss: 0.037223	current batch logloss: 0.049621
+2016-07-07 06:24:41.978840	encountered:            589000000	current whole logloss: 0.037250	current batch logloss: 0.053447
+2016-07-07 06:24:54.744157	encountered:            590000000	current whole logloss: 0.037282	current batch logloss: 0.055842
+2016-07-07 06:25:07.512368	encountered:            591000000	current whole logloss: 0.037321	current batch logloss: 0.060528
+2016-07-07 06:25:20.181905	encountered:            592000000	current whole logloss: 0.037360	current batch logloss: 0.060377
+2016-07-07 06:25:32.807509	encountered:            593000000	current whole logloss: 0.037398	current batch logloss: 0.060116
+2016-07-07 06:25:45.642008	encountered:            594000000	current whole logloss: 0.037429	current batch logloss: 0.055653
+2016-07-07 06:25:58.464410	encountered:            595000000	current whole logloss: 0.037458	current batch logloss: 0.054827
+2016-07-07 06:26:11.380208	encountered:            596000000	current whole logloss: 0.037487	current batch logloss: 0.054818
+2016-07-07 06:26:24.355637	encountered:            597000000	current whole logloss: 0.037507	current batch logloss: 0.049447
+2016-07-07 06:26:37.425673	encountered:            598000000	current whole logloss: 0.037525	current batch logloss: 0.048167
+2016-07-07 06:26:50.505606	encountered:            599000000	current whole logloss: 0.037543	current batch logloss: 0.047988
+2016-07-07 06:27:03.599015	encountered:            600000000	current whole logloss: 0.037561	current batch logloss: 0.048341
+2016-07-07 06:27:16.606711	encountered:            601000000	current whole logloss: 0.037574	current batch logloss: 0.045837
+2016-07-07 06:27:29.419838	encountered:            602000000	current whole logloss: 0.037584	current batch logloss: 0.043270
+2016-07-07 06:27:42.421399	encountered:            603000000	current whole logloss: 0.037595	current batch logloss: 0.044541
+2016-07-07 06:27:55.265483	encountered:            604000000	current whole logloss: 0.037606	current batch logloss: 0.044078
+2016-07-07 06:28:08.141672	encountered:            605000000	current whole logloss: 0.037618	current batch logloss: 0.044537
+2016-07-07 06:28:20.740576	encountered:            606000000	current whole logloss: 0.037623	current batch logloss: 0.040796
+2016-07-07 06:28:33.321801	encountered:            607000000	current whole logloss: 0.037629	current batch logloss: 0.041582
+2016-07-07 06:28:45.788741	encountered:            608000000	current whole logloss: 0.037637	current batch logloss: 0.042313
+2016-07-07 06:28:58.173202	encountered:            609000000	current whole logloss: 0.037643	current batch logloss: 0.041155
+2016-07-07 06:29:10.629120	encountered:            610000000	current whole logloss: 0.037648	current batch logloss: 0.040969
+2016-07-07 06:29:23.127955	encountered:            611000000	current whole logloss: 0.037654	current batch logloss: 0.040966
+2016-07-07 06:29:35.814139	encountered:            612000000	current whole logloss: 0.037659	current batch logloss: 0.040990
+2016-07-07 06:29:48.603228	encountered:            613000000	current whole logloss: 0.037666	current batch logloss: 0.041585
+2016-07-07 06:30:01.237024	encountered:            614000000	current whole logloss: 0.037671	current batch logloss: 0.041210
+2016-07-07 06:30:13.953447	encountered:            615000000	current whole logloss: 0.037678	current batch logloss: 0.041558
+2016-07-07 06:30:26.556646	encountered:            616000000	current whole logloss: 0.037685	current batch logloss: 0.042097
+2016-07-07 06:30:39.260889	encountered:            617000000	current whole logloss: 0.037693	current batch logloss: 0.042973
+2016-07-07 06:30:52.042509	encountered:            618000000	current whole logloss: 0.037702	current batch logloss: 0.043080
+2016-07-07 06:31:04.639601	encountered:            619000000	current whole logloss: 0.037709	current batch logloss: 0.041946
+2016-07-07 06:31:17.282798	encountered:            620000000	current whole logloss: 0.037717	current batch logloss: 0.042816
+2016-07-07 06:31:29.946947	encountered:            621000000	current whole logloss: 0.037723	current batch logloss: 0.041231
+2016-07-07 06:31:42.687063	encountered:            622000000	current whole logloss: 0.037729	current batch logloss: 0.041824
+2016-07-07 06:31:55.376029	encountered:            623000000	current whole logloss: 0.037736	current batch logloss: 0.041920
+2016-07-07 06:32:08.130788	encountered:            624000000	current whole logloss: 0.037743	current batch logloss: 0.041988
+2016-07-07 06:32:20.886540	encountered:            625000000	current whole logloss: 0.037750	current batch logloss: 0.042103
+2016-07-07 06:32:33.663629	encountered:            626000000	current whole logloss: 0.037756	current batch logloss: 0.041622
+2016-07-07 06:32:46.500653	encountered:            627000000	current whole logloss: 0.037761	current batch logloss: 0.040652
+2016-07-07 06:32:59.112489	encountered:            628000000	current whole logloss: 0.037765	current batch logloss: 0.040209
+2016-07-07 06:33:11.957030	encountered:            629000000	current whole logloss: 0.037770	current batch logloss: 0.041049
+2016-07-07 06:33:24.777428	encountered:            630000000	current whole logloss: 0.037776	current batch logloss: 0.041379
+2016-07-07 06:33:37.538011	encountered:            631000000	current whole logloss: 0.037782	current batch logloss: 0.041759
+2016-07-07 06:33:50.735354	encountered:            632000000	current whole logloss: 0.037792	current batch logloss: 0.044134
+2016-07-07 06:34:03.922853	encountered:            633000000	current whole logloss: 0.037801	current batch logloss: 0.043791
+2016-07-07 06:34:17.195796	encountered:            634000000	current whole logloss: 0.037810	current batch logloss: 0.043357
+2016-07-07 06:34:30.218499	encountered:            635000000	current whole logloss: 0.037819	current batch logloss: 0.043509
+2016-07-07 06:34:43.042848	encountered:            636000000	current whole logloss: 0.037826	current batch logloss: 0.042109
+2016-07-07 06:34:55.361239	encountered:            637000000	current whole logloss: 0.037828	current batch logloss: 0.039133
+2016-07-07 06:35:07.718911	encountered:            638000000	current whole logloss: 0.037830	current batch logloss: 0.038930
+2016-07-07 06:35:20.050627	encountered:            639000000	current whole logloss: 0.037832	current batch logloss: 0.039510
+2016-07-07 06:35:32.615054	encountered:            640000000	current whole logloss: 0.037834	current batch logloss: 0.038747
+2016-07-07 06:35:45.230075	encountered:            641000000	current whole logloss: 0.037837	current batch logloss: 0.039655
+2016-07-07 06:35:57.792447	encountered:            642000000	current whole logloss: 0.037839	current batch logloss: 0.039661
+2016-07-07 06:36:10.455773	encountered:            643000000	current whole logloss: 0.037843	current batch logloss: 0.040122
+2016-07-07 06:36:23.015204	encountered:            644000000	current whole logloss: 0.037847	current batch logloss: 0.040138
+2016-07-07 06:36:35.563162	encountered:            645000000	current whole logloss: 0.037851	current batch logloss: 0.040994
+2016-07-07 06:36:48.123910	encountered:            646000000	current whole logloss: 0.037856	current batch logloss: 0.040743
+2016-07-07 06:37:00.709596	encountered:            647000000	current whole logloss: 0.037861	current batch logloss: 0.040843
+2016-07-07 06:37:13.304876	encountered:            648000000	current whole logloss: 0.037863	current batch logloss: 0.039554
+2016-07-07 06:37:25.677724	encountered:            649000000	current whole logloss: 0.037865	current batch logloss: 0.039023
+2016-07-07 06:37:37.979266	encountered:            650000000	current whole logloss: 0.037867	current batch logloss: 0.038870
+2016-07-07 06:37:50.613442	encountered:            651000000	current whole logloss: 0.037869	current batch logloss: 0.039430
+2016-07-07 06:38:03.213195	encountered:            652000000	current whole logloss: 0.037871	current batch logloss: 0.039483
+2016-07-07 06:38:15.703708	encountered:            653000000	current whole logloss: 0.037873	current batch logloss: 0.038926
+2016-07-07 06:38:28.176609	encountered:            654000000	current whole logloss: 0.037875	current batch logloss: 0.039316
+2016-07-07 06:38:40.702731	encountered:            655000000	current whole logloss: 0.037873	current batch logloss: 0.036115
+2016-07-07 06:38:53.079248	encountered:            656000000	current whole logloss: 0.037872	current batch logloss: 0.037548
+2016-07-07 06:39:05.500741	encountered:            657000000	current whole logloss: 0.037870	current batch logloss: 0.036339
+2016-07-07 06:39:17.909284	encountered:            658000000	current whole logloss: 0.037870	current batch logloss: 0.037754
+2016-07-07 06:39:30.274941	encountered:            659000000	current whole logloss: 0.037867	current batch logloss: 0.036517
+2016-07-07 06:39:42.703106	encountered:            660000000	current whole logloss: 0.037866	current batch logloss: 0.036633
+2016-07-07 06:39:55.102699	encountered:            661000000	current whole logloss: 0.037861	current batch logloss: 0.034626
+2016-07-07 06:40:07.518527	encountered:            662000000	current whole logloss: 0.037853	current batch logloss: 0.032544
+2016-07-07 06:40:19.746680	encountered:            663000000	current whole logloss: 0.037844	current batch logloss: 0.031871
+2016-07-07 06:40:32.117219	encountered:            664000000	current whole logloss: 0.037837	current batch logloss: 0.033105
+2016-07-07 06:40:44.346292	encountered:            665000000	current whole logloss: 0.037829	current batch logloss: 0.032938
+2016-07-07 06:40:56.727002	encountered:            666000000	current whole logloss: 0.037821	current batch logloss: 0.032685
+2016-07-07 06:41:09.129062	encountered:            667000000	current whole logloss: 0.037815	current batch logloss: 0.033512
+2016-07-07 06:41:21.668019	encountered:            668000000	current whole logloss: 0.037813	current batch logloss: 0.036710
+2016-07-07 06:41:34.536626	encountered:            669000000	current whole logloss: 0.037814	current batch logloss: 0.038490
+2016-07-07 06:41:47.217570	encountered:            670000000	current whole logloss: 0.037816	current batch logloss: 0.038621
+2016-07-07 06:41:59.664126	encountered:            671000000	current whole logloss: 0.037817	current batch logloss: 0.038732
+2016-07-07 06:42:12.220104	encountered:            672000000	current whole logloss: 0.037818	current batch logloss: 0.038693
+2016-07-07 06:42:24.777690	encountered:            673000000	current whole logloss: 0.037822	current batch logloss: 0.040619
+2016-07-07 06:42:37.122398	encountered:            674000000	current whole logloss: 0.037828	current batch logloss: 0.041471
+2016-07-07 06:42:49.488983	encountered:            675000000	current whole logloss: 0.037832	current batch logloss: 0.040917
+2016-07-07 06:43:02.231695	encountered:            676000000	current whole logloss: 0.037835	current batch logloss: 0.039929
+2016-07-07 06:43:14.688466	encountered:            677000000	current whole logloss: 0.037835	current batch logloss: 0.037717
+2016-07-07 06:43:27.095817	encountered:            678000000	current whole logloss: 0.037836	current batch logloss: 0.038346
+2016-07-07 06:43:39.386156	encountered:            679000000	current whole logloss: 0.037837	current batch logloss: 0.038655
+2016-07-07 06:43:51.795804	encountered:            680000000	current whole logloss: 0.037835	current batch logloss: 0.036437
+2016-07-07 06:44:04.331256	encountered:            681000000	current whole logloss: 0.037834	current batch logloss: 0.036737
+2016-07-07 06:44:16.737095	encountered:            682000000	current whole logloss: 0.037832	current batch logloss: 0.036763
+2016-07-07 06:44:29.376398	encountered:            683000000	current whole logloss: 0.037829	current batch logloss: 0.035706
+2016-07-07 06:44:42.024703	encountered:            684000000	current whole logloss: 0.037825	current batch logloss: 0.035063
+2016-07-07 06:44:54.618427	encountered:            685000000	current whole logloss: 0.037821	current batch logloss: 0.034941
+2016-07-07 06:45:07.076005	encountered:            686000000	current whole logloss: 0.037817	current batch logloss: 0.035097
+2016-07-07 06:45:19.490696	encountered:            687000000	current whole logloss: 0.037812	current batch logloss: 0.034485
+2016-07-07 06:45:31.916884	encountered:            688000000	current whole logloss: 0.037807	current batch logloss: 0.034480
+2016-07-07 06:45:44.323081	encountered:            689000000	current whole logloss: 0.037805	current batch logloss: 0.036605
+2016-07-07 06:45:56.720357	encountered:            690000000	current whole logloss: 0.037813	current batch logloss: 0.043115
+2016-07-07 06:46:09.462309	encountered:            691000000	current whole logloss: 0.037820	current batch logloss: 0.042873
+2016-07-07 06:46:21.903190	encountered:            692000000	current whole logloss: 0.037832	current batch logloss: 0.045645
+2016-07-07 06:46:34.081049	encountered:            693000000	current whole logloss: 0.037843	current batch logloss: 0.045611
+Final logloss: 0.0378484334273
+ERROR ROWS: 0
+Saving model...
+2016-07-07 06:46:54.858905 Encountered: 500000.0 Current loss: 0.0528952412749 Total loss: 0.0528952412749
+2016-07-07 06:47:02.940453 Encountered: 1000000.0 Current loss: 0.0502357934111 Total loss: 0.051565517343
+2016-07-07 06:47:09.621121 Encountered: 1500000.0 Current loss: 0.0468205876903 Total loss: 0.0499838741254
+2016-07-07 06:47:16.131626 Encountered: 2000000.0 Current loss: 0.047861366509 Total loss: 0.0494532472213
+2016-07-07 06:47:22.508525 Encountered: 2500000.0 Current loss: 0.042863312663 Total loss: 0.0481352603096
+2016-07-07 06:47:28.893739 Encountered: 3000000.0 Current loss: 0.042429903678 Total loss: 0.0471843675377
+2016-07-07 06:47:35.249257 Encountered: 3500000.0 Current loss: 0.0413472472643 Total loss: 0.0463504932129
+2016-07-07 06:47:40.891079 Encountered: 4000000.0 Current loss: 0.0422864000689 Total loss: 0.0458424815699
+2016-07-07 06:47:47.240307 Encountered: 4500000.0 Current loss: 0.0442458914094 Total loss: 0.0456650826632
+2016-07-07 06:47:53.657047 Encountered: 5000000.0 Current loss: 0.0427582026009 Total loss: 0.045374394657
+2016-07-07 06:48:00.068566 Encountered: 5500000.0 Current loss: 0.0457643052291 Total loss: 0.0454098410726
+2016-07-07 06:48:06.468513 Encountered: 6000000.0 Current loss: 0.0447172519944 Total loss: 0.0453521253161
+2016-07-07 06:48:12.911825 Encountered: 6500000.0 Current loss: 0.04683127221 Total loss: 0.0454659058464
+2016-07-07 06:48:18.594181 Encountered: 7000000.0 Current loss: 0.0522455628484 Total loss: 0.0459501670608
+2016-07-07 06:48:25.120233 Encountered: 7500000.0 Current loss: 0.053871489822 Total loss: 0.0464782552449
+2016-07-07 06:48:31.574867 Encountered: 8000000.0 Current loss: 0.0466623766343 Total loss: 0.0464897628317
+2016-07-07 06:48:37.993633 Encountered: 8500000.0 Current loss: 0.0412925591239 Total loss: 0.0461840449666
+2016-07-07 06:48:44.350634 Encountered: 9000000.0 Current loss: 0.0417146765306 Total loss: 0.0459357467201
+2016-07-07 06:48:50.703152 Encountered: 9500000.0 Current loss: 0.0421775235464 Total loss: 0.0457379455004
+2016-07-07 06:48:55.303351 Encountered: 9899039.0 Current loss: 0.0409499717556 Total loss: 0.0455449380524
+Error count: 0
+FINAL AVG LOSS = 0.045545
+
+#================================
+#Computing AUC ROC & Calibration:
+#================================
+
+med prob of Non Clicks: 0.004945 med prob of Clicks: 0.099748
+min prob of Non Clicks: 0.000181 max prob of Clicks: 0.825173
+AUCROC = 0.862414541543, RMSE = 0.096651432424, LOGLOSS = 0.0456449658575
+Actual CTR = 0.00949284450454, Avg Predicted CTR = 0.0185684984521
+Predicted, Actual, Ad%, Click%, areaI, areaE, adareaE, clickareaE
+0.000181 0.0 0.0 0.0 0.0 1.81e-08 0.0 0.0
+0.000257971428571 0.0 5.0509973952e-07 0.0 0.0 2.57971428571e-08 4.82114815088e-13 0.0
+0.000348714285714 0.0 1.76784908832e-05 0.0 0.0 3.48714285714e-08 2.28095465871e-11 0.0
+0.000455063142438 0.0 8.13210580627e-05 0.0 0.0 4.55063142438e-08 1.36923000045e-10 0.0
+0.00053778372093 0.0 0.000343972922613 0.0 0.0 5.3778372093e-08 6.84437241422e-10 0.0
+0.000648355625492 0.0 0.000434385775987 0.0 0.0 6.48355625492e-08 1.04205490753e-09 0.0
+0.000750262402089 0.0 0.00064198176893 0.0 0.0 7.50262402089e-08 1.782122701e-09 0.0
+0.000859495079951 0.0 0.000386906400472 0.0 0.0 8.59495079951e-08 1.23041334615e-09 0.0
+0.000957007282124 0.0 0.00082129217646 0.0 0.0 9.57007282124e-08 2.90813559641e-09 0.0
+0.00157746615439 0.000463810263996 0.00215020959114 0.0 4.63810263996e-08 1.11365589039e-07 8.85999623395e-09 0.0
+0.00253732416402 0.000825456871245 0.0402938266205 0.00196871341918 8.25456871245e-07 1.71186729277e-06 2.55217430402e-06 1.24696516112e-07
+0.00348845923788 0.00115841482771 0.0923973902507 0.00803447908907 1.15841482771e-06 2.33004441017e-06 7.96573083871e-06 6.92665644334e-07
+0.00468134044966 0.00213574161061 0.0789208241005 0.00963073321273 2.13574161061e-06 2.54559883906e-06 7.43332805368e-06 9.07091381566e-07
+0.0054265887418 0.00357557662254 0.30011662753 0.0675215494307 3.57557662254e-06 1.85101211926e-06 2.05542220458e-05 4.62437863338e-06
+0.00651495308389 0.00225958465266 0.0830631470643 0.0312865808237 2.25958465266e-06 4.25536843122e-06 1.30781788712e-05 4.92602934924e-06
+0.00748340767769 0.00216623164474 0.0339775543778 0.00808768755986 2.16623164474e-06 5.31717603296e-06 6.68459159845e-06 1.59113536285e-06
+0.00853506930181 0.00455121365698 0.02844671223 0.0064914334362 4.55121365698e-06 3.98385564484e-06 4.1931210185e-06 9.56854548303e-07
+0.00945357147268 0.00418198658396 0.0302979027754 0.0145259125253 4.18198658396e-06 5.27158488871e-06 5.90956475792e-06 2.83325949563e-06
+0.0135715241299 0.00663787629937 0.0179961986194 0.00792806214749 6.63787629937e-06 6.93364783049e-06 4.61683423002e-06 2.03390446363e-06
+0.0248767186343 0.0122887488042 0.0962583726596 0.0673087155475 0.000122887488042 0.0001258796983 0.000448328071642 0.000313493629826
+0.0343426967896 0.0163651203918 0.0617772338415 0.0799723315952 0.000163651203918 0.000179775763978 0.00041092382818 0.000531952219355
+0.0445616786771 0.020365535248 0.0371298818521 0.0640097903586 0.00020365535248 0.000241961434291 0.000332407980315 0.000573052325301
+0.0548297265569 0.0235124493983 0.0145089900177 0.0311269554113 0.000235124493983 0.000313172771585 0.00016812136282 0.000360680251195
+0.0644341783484 0.0324509717703 0.00910846360277 0.0225603916143 0.000324509717703 0.000319832065781 0.000107787613016 0.00026697485623
+0.0749671880874 0.0352729960925 0.00574348913808 0.019633925721 0.000352729960925 0.000396941919949 8.43537694101e-05 0.000288360542358
+0.0851722529744 0.0458060678168 0.00478278943352 0.0177716292434 0.000458060678168 0.000393661851576 6.96636645316e-05 0.000258852461519
+0.0943966235338 0.0611429997504 0.00339629064853 0.0163882090029 0.000611429997504 0.000332536237834 4.17874194496e-05 0.000201637914566
+0.134328798851 0.075638167229 0.00404786931251 0.0260721506864 0.00075638167229 0.000586906316216 8.79016424691e-05 0.000566170666862
+0.238850674625 0.123925246927 0.0423642304528 0.337554538683 0.0123925248304 0.0114925428975 0.0180142912246 0.143536320595
+0.334930693131 0.170420974889 0.00710826863427 0.0927955730552 0.0170420976783 0.016450972007 0.00432670334786 0.0564833628641
+0.440571101317 0.274569402229 0.00273562018924 0.0491114185378 0.027456940528 0.0166001700933 0.00
+real	0m0.814s
+user	0m0.016s
+sys	0m0.008s
+168023513672 0.0301645423462
+0.538207338346 0.334586466165 0.000498533442906 0.0144194955837 0.0334586469883 0.0203620874443 0.000375593717659 0.0108636081092
+0.640155230769 0.615384615385 0.000134356530712 0.00473555390018 0.0615384622222 0.00247706156598 1.23139477396e-05 0.000434019566712
+0.737526666667 0.333333333333 1.31325932275e-05 0.000851335532617 0.0333333337037 0.0404193337824 1.96399947564e-05 0.00127318535699
+0.8181306 0.6 1.51529921856e-06 5.32084707885e-05 0.0600000006667 0.0218130602424 1.22297258617e-06 4.29436644125e-05
+No Data in binID: 35
+No Data in binID: 36
+Metrics:  AUC Cal:0.248477975646,
+ AUC ROC:0.862414541543,
+ RMSE:0.096651432424,
+ Logloss:0.0456449658575,
+ Unweighted Error:0.132540707179,
+ Error on Ads:0.0262542801068 0.0 0.0262542801068,
+ on Clicks:0.246177847385 0.0 2.78278730016,
+ Total ads:1979807,
+ Total clicks:18794.0
+output/samp_2016-07-05.rm.svg
+echo "PYTEST_2016-07-05: CTR Prediction performance AUC Cal:0.248477975646,
+ AUC ROC:0.862414541543,
+ RMSE:0.096651432424,
+ Logloss:0.0456449658575,
+ Unweighted Error:0.132540707179,
+ Error on Ads:0.0262542801068 0.0 0.0262542801068,
+ on Clicks:0.246177847385 0.0 2.78278730016,
+ Total ads:1979807,
+ Total clicks:18794.0" | mutt -s "PYTEST_2016-07-05" -a  output/samp_2016-07-05.rm.svg   -- swapnil.g@vserv.com

@@ -3,7 +3,7 @@
 import sys, json
 from datetime import datetime
 from math import sqrt
-from functions import logloss, get_x, get_p, readvw, compress, decompress
+from functions import logloss, get_x, get_p, readvw, compress, decompress, is2pow, getDefWeight
 
 # parameters #################################################################
 
@@ -18,24 +18,29 @@ fresh = True # SET inmodel IF fresh == False
 adapt = 1
 fudge = 0.
 
-logbatch = 10000000
+lambda2 = .001   # L2 regularization 0.0002
+
+logbatch = 1000000
+
+defaultCTR = 0.005
+numOfFeatures = 13
 
 if fresh:
-    lambda2 = .0002   # L2 regularization
+    initial_wt = getDefWeight(defaultCTR, numOfFeatures)
+    #initial_wt = 0.
     D = 2 ** 20    # number of weights use for learning
-    w = [0.] * D #m = [0.] * D
+    w = [initial_wt] * D #m = [0.] * D
     meta = {}
 #    q = [lambda2] * D
-#    header = ['z','d','hr','wd','zr','sa','as','con','camp','cln']
 else:
     f = open(inmodel,'r')
     pars = json.load(f)
     f.close()
+    initial_wt = pars['iw']
     D = pars['D']
-    w = decompress(pars['w'], D) #m = pars['m']
+    w = decompress(pars['w'], D, initial_wt) #m = pars['m']
     meta = pars['meta']
 #    q = pars['q']
-#    header = pars['header']
 
 # initialize new model
 #w = list(m)
@@ -59,7 +64,7 @@ def update_w(w, g, x, p, y):
         # (p - y) * x[i] is the current gradient
         # note that in our case, if i in x then x[i] = 1
 #        delta = (p - y) * xi + (w[i] - m[i]) * lambda2 #q[i]
-        delta = (p - y) * xi + w[i] * lambda2 #q[i]
+        delta = (p - y) * xi + (w[i] - initial_wt) * lambda2 #q[i]
         if adapt > 0:
             g[i] += delta ** 2
         w[i] -= delta * alpha / ((fudge + sqrt(g[i])) ** adapt)  # Minimising log loss
@@ -72,13 +77,14 @@ loss = 0.
 lossb = 0.
 errcount = 0
 t = 0
+batcht = 0
 
 for line in train:
     # READS VW FORMAT
     row = readvw(line)
-    
+
     y = 1. if row[0] == '1' else 0.
-    x = get_x(row[1:12], D)
+    x = get_x(row[1:numOfFeatures], D)
 
     if x.has_key('insane'):
         errorcount += 1
@@ -91,10 +97,12 @@ for line in train:
     loss += lossx
     lossb += lossx
     t += 1
-    if t % logbatch == 0 and t > 1:
-        print('%s\tencountered: %d\tcurrent whole logloss: %f\tcurrent batch logloss: %f' % (datetime.now(), t, loss/t, lossb/logbatch))
+    batcht += 1
+    if is2pow(t) or t % logbatch == 0:
+        print('%s\tencountered: %20d\tcurrent whole logloss: %f\tcurrent batch logloss: %f' % (datetime.now(), t, loss/t, lossb/batcht))
         sys.stdout.flush()
         lossb = 0.
+        batcht = 0
 
     # step 3, update model with answer
 #    w, g = update_w(w, g, x, p, y, m, q)
@@ -104,9 +112,9 @@ print "Final logloss:",loss/t
 print "ERROR ROWS:",errcount
 
 pars2 = {}
+pars2['iw'] = initial_wt
 pars2['D'] = D
-#pars2['header'] = header
-pars2['w'] = compress(w, D)
+pars2['w'] = compress(w, D, initial_wt)
 #pars2['q'] = q
 
 print "Saving model..."

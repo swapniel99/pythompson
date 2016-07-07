@@ -20,8 +20,8 @@ pars = json.load(f)
 f.close()
 
 D = pars['D']
-w = decompress(pars['w'], D)
-#header = pars['header']
+initial_wt = pars['iw']
+w = decompress(pars['w'], D, initial_wt)
 
 # testing (build preds file)
 loss = 0.
@@ -46,7 +46,7 @@ while True:
 
     pr = map(lambda x: get_p(x, w), X)
     p = map(lambda x: x[0], pr)
-    r = map(lambda x: x[1], pr)
+    #r = map(lambda x: x[1], pr)
 
     lossb = sum([logloss(p_, y_) for (p_, y_) in zip(p, y)])
     loss += lossb
@@ -56,7 +56,7 @@ while True:
     sys.stdout.flush()
 
     for i in range(lenbatch):
-        outfile.write('%d %f\n' % (int(y[i]), r[i]))
+        outfile.write('%d %f\n' % (int(y[i]), p[i]))
 
 outfile.close()
 
@@ -65,5 +65,4 @@ print ('FINAL AVG LOSS = %f' % (loss/t))
 
 #with open('testscores','a') as f:
 #    f.write("alpha "+ comment+ ": " + str(loss/t) + "\n")
-
 

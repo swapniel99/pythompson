@@ -1,4 +1,6 @@
 data
+infiles/
+models/
 data/
 sdata/
 output/

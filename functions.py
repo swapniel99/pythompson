@@ -196,19 +196,26 @@ def getclick(x, Wreal):
 def readvw(line):
     return filter(lambda x: x[0]!='|', map(lambda x: x.strip(),line.split()))
 
-def compress(array, length):
+def compress(array, length, iw = 0.):
     dct = {}
     for i in range(length):
-        if(array[i] != 0.):
+        if(array[i] != iw):
             dct[i] = array[i]
     return dct
 
-def decompress(dct, length):
-    array = [0.] * length
+def decompress(dct, length, iw = 0.):
+    array = [iw] * length
     for i in dct:
         try:
             array[int(i)] = dct[i]
         except:
             print 'Couldn\'t convert a key to integer:', i
     return array
+
+def is2pow(num):
+    return (num != 0 and ((num & (num - 1)) == 0))
+
+def getDefWeight(y, n):
+    # n = Number of features
+    return (log(y / (1 - y)) / n)
 
